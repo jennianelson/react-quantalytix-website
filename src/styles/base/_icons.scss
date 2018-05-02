@@ -1,0 +1,180 @@
+$icomoon-font-path: "./fonts" !default;
+
+$icon-fb: \e90d;
+$icon-google: \e90e;
+$icon-ig: \e90f;
+$icon-ln: \e910;
+$icon-pint: \e911;
+$icon-email: \e914;
+$icon-jet: \e916;
+$icon-tw: \e917;
+$icon-about-us-menu-selected: \e900;
+$icon-about-us-menu: \e901;
+$icon-contact-us-menu-selected: \e902;
+$icon-contact-us-menu: \e903;
+$icon-home-menu-selected: \e904;
+$icon-home-menu: \e905;
+$icon-market-data-menu-selected: \e906;
+$icon-market-data-menu: \e907;
+$icon-mortgage-analytics-menu-selected: \e908;
+$icon-mortgage-analytics-menu: \e909;
+$icon-resources-menu-selected: \e90a;
+$icon-resources-menu: \e90b;
+$icon-selected-bar-menu: \e90c;
+
+
+@font-face {
+  font-family: 'quantalytix';
+  src:  url('#{$icomoon-font-path}/quantalytix.eot?f2vvqg');
+  src:  url('#{$icomoon-font-path}/quantalytix.eot?f2vvqg#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/quantalytix.ttf?f2vvqg') format('truetype'),
+    url('#{$icomoon-font-path}/quantalytix.woff?f2vvqg') format('woff'),
+    url('#{$icomoon-font-path}/quantalytix.svg?f2vvqg#quantalytix') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'quantalytix' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+.icon-fb {
+  &:before {
+    content: unicode($icon-fb);
+    color: #fff;
+  }
+}
+.icon-google {
+  &:before {
+    content: unicode($icon-google);
+    color: #fff;
+  }
+}
+.icon-ig {
+  &:before {
+    content: unicode($icon-ig);
+    color: #fff;
+  }
+}
+.icon-ln {
+  &:before {
+    content: unicode($icon-ln);
+    color: #fff;
+  }
+}
+.icon-pint {
+  &:before {
+    content: unicode($icon-pint);
+    color: #fff;
+  }
+}
+.icon-email {
+  &:before {
+    content: unicode($icon-email);
+    color: #fff;
+  }
+}
+.icon-jet {
+  &:before {
+    content: unicode($icon-jet);
+    color: #fff;
+  }
+}
+.icon-tw {
+  &:before {
+    content: unicode($icon-tw);
+    color: #fff;
+  }
+}
+.icon-about-us-menu-selected {
+  &:before {
+    content: unicode($icon-about-us-menu-selected);
+    color: #81c4f0;
+  }
+}
+.icon-about-us-menu {
+  &:before {
+    content: unicode($icon-about-us-menu);
+    color: #e3e3e3;
+  }
+}
+.icon-contact-us-menu-selected {
+  &:before {
+    content: unicode($icon-contact-us-menu-selected);
+    color: #81c4f0;
+  }
+}
+.icon-contact-us-menu {
+  &:before {
+    content: unicode($icon-contact-us-menu);
+    color: #e3e3e3;
+  }
+}
+.icon-home-menu-selected {
+  &:before {
+    content: unicode($icon-home-menu-selected);
+    color: #81c4f0;
+  }
+}
+.icon-home-menu {
+  &:before {
+    content: unicode($icon-home-menu);
+    color: #e3e3e3;
+  }
+}
+.icon-market-data-menu-selected {
+  &:before {
+    content: unicode($icon-market-data-menu-selected);
+    color: #81c4f0;
+  }
+}
+.icon-market-data-menu {
+  &:before {
+    content: unicode($icon-market-data-menu);
+  }
+}
+.icon-mortgage-analytics-menu-selected {
+  &:before {
+    content: unicode($icon-mortgage-analytics-menu-selected);
+    color: #81c4f0;
+  }
+}
+.icon-mortgage-analytics-menu {
+  &:before {
+    content: unicode($icon-mortgage-analytics-menu);
+    color: #e3e3e3;
+  }
+}
+.icon-resources-menu-selected {
+  &:before {
+    content: unicode($icon-resources-menu-selected);
+    color: #81c4f0;
+  }
+}
+.icon-resources-menu {
+  &:before {
+    content: unicode($icon-resources-menu);
+    color: #e3e3e3;
+  }
+}
+.icon-selected-bar-menu {
+  &:before {
+    content: unicode($icon-selected-bar-menu);
+    color: #81c4f0;
+  }
+}

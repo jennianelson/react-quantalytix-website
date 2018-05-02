@@ -1,0 +1,25 @@
+@import 'base/libs';
+
+$breakpoints: $grid-breakpoints;
+
+// Bases classes are fundamental building blocks based on the site design
+@import 'base/fonts';
+@import 'base/colors';
+
+@import 'base/variables';
+@import 'base/baseelements';
+@import 'base/typography';
+@import 'base/icons';
+
+
+// UI Components are generic and reusable, and only relies on base and vendor css
+@import 'ui_components/buttons';
+
+@import 'layouts/header';
+@import 'layouts/sidebar';
+@import 'layouts/footer';
+
+@import 'modules/main';
+@import 'modules/market-data';
+@import 'modules/about';
+@import 'modules/contact';

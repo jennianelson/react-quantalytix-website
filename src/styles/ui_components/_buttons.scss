@@ -1,0 +1,80 @@
+.btn {
+    text-transform: uppercase;
+    font-size: rem(16px);
+    font-weight: bold;
+    transition: 0.3s;
+    @include media-breakpoint-down(md) {
+        font-size: rem(14px);
+    }
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    &.lg {
+        padding: 10px 15px;
+        width: rem(350px);
+        font-size: rem(22px);
+        @include media-breakpoint-down(sm) {
+            width: rem(270px);
+            font-size: rem(20px);
+        }
+        @include media-breakpoint-down(lg) {
+            width: rem(300px);
+            font-size: rem(18px);
+        }
+        @include media-breakpoint-up(xl) {
+            width: rem(390px);
+            font-size: rem(30px);
+            padding: 12px 19px;
+        }
+    }
+
+    &.md {
+        padding-left: 15px;
+        padding-right: 15px;
+        @include media-breakpoint-up(xl) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+
+.btn-rounded {
+    border-radius: 25px;
+    &.lg {
+        border-radius: 50px;
+    }
+}
+.btn-secondary {
+    background: transparent;
+    border: 3px solid #8a3bb8;
+    &:hover, &:focus, &:active {
+        border: 3px solid darken(#8a3bb8, 10%)!important;
+        background: darken(#8a3bb8, 10%)!important;
+    }
+}
+
+.btn-blue {
+    background: transparent;
+    border: 3px solid #81c4f0;
+    color: #fff;
+    &:hover, &:focus, &:active {
+        border: 3px solid darken(#81c4f0, 10%)!important;
+        background: darken(#81c4f0, 10%)!important;
+    }
+}
+
+.btn-primary {
+    background: #8a3bb8;
+    border: 3px solid #8a3bb8;
+    &:hover, &:focus, &:active {
+        border: 3px solid darken(#8a3bb8, 10%)!important;
+        background: darken(#8a3bb8, 10%)!important;
+    }
+}
+
+.btn-neutral {
+    background: #fff;
+    color: #494c50;
+    font-weight: normal;
+}

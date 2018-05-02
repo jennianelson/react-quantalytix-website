@@ -1,0 +1,66 @@
+.home-page, .market-data-page, .about-page, .contact-page  {
+    display: flex;
+    padding: 0;
+    background: url("./images/home-bg1.png") 50% no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    &:after {
+        content: "";
+        background: url("./images/home-bg2.png") 50% no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        z-index: 0;
+    }
+    .main-content {
+        text-align: center;
+    }
+
+    hrgoup {
+        display: block;
+        padding: 0 rem(30px) rem(45px);
+    }
+}
+
+.market-data-page {
+    background: #191919  url("./images/market-data-bg.jpg") 0 0 no-repeat;
+    background-attachment: fixed;
+    background-size: 90%;
+    &:after {
+        content: normal;
+    }
+}
+
+.main-container {
+    display: flex;
+    flex-flow: column;
+    width: calc(100% - #{$sidebar-width});
+    position: relative;
+    z-index: 2;
+    @include media-breakpoint-down(md) {
+        width: 100%;
+    }
+}
+
+.main {
+    padding: 0 rem(20px);
+}
+
+.desktop-platform {
+    max-width: 800px;
+    margin: 0 auto;
+    @include media-breakpoint-down(md) {
+        margin: rem(30px) auto;
+    }
+    @include media-breakpoint-up(xl) {
+        max-width: 1200px;
+    }
+}
+
+.resourses-section, .testimonials-section {
+    padding: 20px 40px;
+}
