@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Container, Aside} from './components/primitives';
-import {Nav} from './components/parts';
+import {Container} from './components/primitives';
+import {Aside} from './components/widgets';
 // import logo from './logo.svg';
 import './styles/style.css';
 
@@ -8,16 +8,7 @@ class App extends Component {
   render() {
     return (
       <Container className="container-fluid home-page">
-        <Aside className="aside collapse" id="collapseExample">
-            <span className="close thick" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"></span>
-            <Container className="aside-content">
-                <Container className="text-center">
-                    <a href="#" className="brand"><img src={require('./assets/images/qlogo-dark-psd.png')} className="img-fluid" alt=""/></a>
-                </Container>
-
-                <Nav className="sidebar-menu"></Nav>
-            </Container>
-        </Aside>
+        <Aside className="aside collapse" id="collapseExample"></Aside>
 
 				<div className="main-container">
 						<header className="header">
