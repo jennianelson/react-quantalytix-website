@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Container} from './components/primitives';
-import {Aside} from './components/widgets';
+import {Sidebar} from './components/ui';
 // import logo from './logo.svg';
 import './styles/style.css';
 
@@ -8,9 +8,9 @@ class App extends Component {
   render() {
     return (
       <Container className="container-fluid home-page">
-        <Aside className="aside collapse" id="collapseExample"></Aside>
+        <Sidebar className="aside collapse" id="collapseExample"></Sidebar>
 
-				<div className="main-container">
+				<Container className="main-container">
 						<header className="header">
 
 								<div className="d-flex align-items-center justify-content-between  justify-content-lg-end">
@@ -38,7 +38,7 @@ class App extends Component {
 										<div className="btn btn-rounded btn-primary lg mb-4">Get Started</div>
 								</div>
 						</main>
-				</div>
+				</Container>
     	</Container>
     );
   }
