@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Container, Aside} from './components/primitives';
+import {Container, Aside, Nav} from './components/primitives';
 // import logo from './logo.svg';
 import './styles/style.css';
 
@@ -9,12 +9,12 @@ class App extends Component {
       <Container className="container-fluid home-page">
         <Aside className="aside collapse" id="collapseExample">
             <span className="close thick" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"></span>
-            <div className="aside-content">
-                <div className="text-center">
+            <Container className="aside-content">
+                <Container className="text-center">
                     <a href="#" className="brand"><img src={require('./assets/images/qlogo-dark-psd.png')} className="img-fluid" alt=""/></a>
-                </div>
+                </Container>
 
-                <nav className="sidebar-menu">
+                <Nav className="sidebar-menu">
                     <ul className="sidebar-nav">
                         <li className="sidebar-nav-item active"><a href="index.html"><span className="menu-icon non-selected"><i className="icon-home-menu"></i></span><span className="menu-icon selected"><i className="icon-home-menu-selected"></i></span>Home</a></li>
                         <li className="sidebar-nav-item"><a href="market-data.html"><span className="menu-icon non-selected"><i className="icon-market-data-menu"></i></span><span className="menu-icon selected"><i className="icon-market-data-menu-selected"></i></span>Market Data</a></li>
@@ -23,8 +23,8 @@ class App extends Component {
                         <li className="sidebar-nav-item"><a href="about-us.html"><span className="menu-icon non-selected"><i className="icon-about-us-menu"></i></span><span className="menu-icon selected"><i className="icon-about-us-menu-selected"></i></span>About Us</a></li>
                         <li className="sidebar-nav-item"><a href="contact-us.html"><span className="menu-icon non-selected"><i className="icon-contact-us-menu"></i></span><span className="menu-icon selected"><i className="icon-contact-us-menu-selected"></i></span>Contact Us</a></li>
                     </ul>
-                </nav>
-            </div>
+                </Nav>
+            </Container>
         </Aside>
 
 				<div className="main-container">
