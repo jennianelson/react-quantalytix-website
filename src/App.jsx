@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Container} from './components/primitives';
-import {Sidebar} from './components/ui';
+import {Sidebar, Header} from './components/ui';
 // import logo from './logo.svg';
 import './styles/style.css';
 
@@ -9,22 +9,8 @@ class App extends Component {
     return (
       <Container className="container-fluid home-page">
         <Sidebar className="aside collapse" id="collapseExample"></Sidebar>
-
 				<Container className="main-container">
-						<header className="header">
-
-								<div className="d-flex align-items-center justify-content-between  justify-content-lg-end">
-										<div className="menu-toggle" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-												<span></span>
-												<span></span>
-												<span></span>
-										</div>
-										<div className="btns-group">
-												<button type="button" className="btn btn-rounded btn-secondary">Signup</button>
-												<button type="button" className="btn btn-rounded btn-primary">Login</button>
-										</div>
-								</div>
-						</header>
+						<Header className="header"></Header>
 
 						<main className="main">
 								<div className="main-content">
