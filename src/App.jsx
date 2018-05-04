@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {Container, MainContainer} from './components/primitives';
 import {Sidebar, Header} from './components/ui';
 
-import HomeModule from './components/modules/HomeModule';
+// import HomeModule from './components/modules/HomeModule';
+import AboutUsModule from './components/modules/AboutUsModule';
 // import logo from './logo.svg';
 import './styles/style.css';
 
@@ -14,7 +15,7 @@ class App extends Component {
 				<Container className="main-container">
 						<Header className="header"></Header>
 						<MainContainer>
-							<HomeModule></HomeModule>
+							<AboutUsModule className="mt-md-5"></AboutUsModule>
 						</MainContainer>
 				</Container>
     	</Container>
