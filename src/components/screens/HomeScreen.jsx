@@ -10,9 +10,9 @@ export default class HomeScreen extends Component {
 					<Header className="header"></Header>
           <Container className="main">
             <div className="main-content">
-              <div className="desktop-platform">
+              {/* <ImageWrapper className="desktop-platform">
                 <img src={require('../../assets/images/dual-monitor-desktop-platform.png')} alt="" className="img-fluid"/>
-              </div>
+              </ImageWrapper> */}
               <hgroup>
                   <h1>Don't let profitable moments pass you by...</h1>
                   <h2>Real-time mortgage data, advanced analytics, and reporting at your fingertips</h2>
