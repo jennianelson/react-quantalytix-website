@@ -1,7 +1,6 @@
 import React from 'react';
 
-const generateClassName = (type) => {
-  debugger
+const generateType = (type) => {
   let css = 'btn btn-rounded '
   switch(type) {
     case "primary":
@@ -16,11 +15,16 @@ const generateClassName = (type) => {
   return css;
 }
 
+const generateClassName = (type, others) => {
+  const classType = generateType(type)
+  return (others === null ? classType : classType + " " + others)
+}
+
 const Button = props => {
   return (
     <button 
       type="button" 
-      className={generateClassName(props.type)}
+      className={generateClassName(props.type, props.others)}
       {...props} 
     />
   )

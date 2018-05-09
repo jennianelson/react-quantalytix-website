@@ -5,7 +5,7 @@ export default class Header extends Component {
   render() {
     return (
       <header className="header">
-        <div className="d-flex align-items-center jus z1  tify-content-between  justify-content-lg-end">
+        <div className="d-flex align-items-center justify-content-between justify-content-lg-end">
             <div className="menu-toggle" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <span></span>
                 <span></span>
