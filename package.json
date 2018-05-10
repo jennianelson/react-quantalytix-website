@@ -92,7 +92,9 @@
     "extends": "react-app"
   },
   "devDependencies": {
+    "file-loader": "^1.1.5",
     "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1"
+    "sass-loader": "^7.0.1",
+    "url-loader": "^0.6.2"
   }
 }

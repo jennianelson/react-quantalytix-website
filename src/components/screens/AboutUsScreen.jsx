@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Button} from '../primitives';
-import {Sidebar, Header, Container, ImageWrapper} from '../ui';
+import {Sidebar, Header, Container, Image} from '../ui';
 
 export default class AboutUsScreen extends Component {
   render() {
@@ -11,9 +11,7 @@ export default class AboutUsScreen extends Component {
 					<Header className="header"></Header>
 						<Container className="main">
               <div className="main-content mt-md-5">
-                <ImageWrapper className="about-logo" imagePath="svg/logo icons/about-logo.svg">
-                  {/* <img src={require('../../assets/images/svg/logo icons/about-logo.svg')} alt="" class="img-fluid"/> */}
-                </ImageWrapper>
+                <Image className="about-logo" imageName="about-logo.svg" />
                 <hgroup className="py-4">
                   <h1>OUR STORY</h1>
                 </hgroup>

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Sidebar, Header, Container} from '../ui';
+import {Sidebar, Header, Container, Image} from '../ui';
 
 export default class HomeScreen extends Component {
   render() {
@@ -10,9 +10,7 @@ export default class HomeScreen extends Component {
 					<Header className="header"></Header>
           <Container className="main">
             <div className="main-content">
-              {/* <ImageWrapper className="desktop-platform">
-                <img src={require('../../assets/images/dual-monitor-desktop-platform.png')} alt="" className="img-fluid"/>
-              </ImageWrapper> */}
+              <Image className="desktop-platform" imageName="dual-monitor-desktop-platform.png" />
               <hgroup>
                   <h1>Don't let profitable moments pass you by...</h1>
                   <h2>Real-time mortgage data, advanced analytics, and reporting at your fingertips</h2>

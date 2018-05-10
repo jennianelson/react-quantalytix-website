@@ -1,11 +1,11 @@
 import Sidebar from './ui/Sidebar';
 import Header from './ui/Header';
 import Container from './ui/Container';
-import ImageWrapper from './ui/ImageWrapper';
+import Image from './ui/Image';
 
 export {
   Sidebar,
   Header,
   Container,
-  ImageWrapper
+  Image
 }
