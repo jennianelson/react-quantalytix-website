@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import {Button} from '../primitives';
-import {Sidebar, Header, Container, Image} from '../ui';
+import {Button, Image} from '../primitives';
+import {Sidebar, Header} from '../ui';
 
 export default class AboutUsScreen extends Component {
   render() {
     return (
-      <Container className="container-fluid about-page">
+      <div className="container-fluid about-page">
         <Sidebar className="aside collapse" id="collapseExample"></Sidebar>
-				<Container className="main-container">
+				<div className="main-container">
 					<Header className="header"></Header>
-						<Container className="main">
+						<div className="main">
               <div className="main-content mt-md-5">
                 <Image className="about-logo" imageName="about-logo.svg" />
                 <hgroup className="py-4">
@@ -21,9 +21,9 @@ export default class AboutUsScreen extends Component {
                   <Button type="primary" size="lg" margins="mt-md-5 mb-4">Get Started</Button>
                 </div>
               </div>
-            </Container>
-				</Container>
-    	</Container>
+            </div>
+				</div>
+    	</div>
     )
   }
 }

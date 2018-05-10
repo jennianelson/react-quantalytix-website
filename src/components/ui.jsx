@@ -1,11 +1,9 @@
 import Sidebar from './ui/Sidebar';
 import Header from './ui/Header';
-import Container from './ui/Container';
-import Image from './ui/Image';
+import MenuCollapse from './ui/MenuCollapse';
 
 export {
   Sidebar,
   Header,
-  Container,
-  Image
+  MenuCollapse
 }
