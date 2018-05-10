@@ -1,33 +1,23 @@
 import React from 'react';
 
-const generateType = (type) => {
-  let css = 'btn btn-rounded '
-  switch(type) {
-    case "primary":
-      css += 'btn-primary';
-      break;
-    case "secondary":
-      css += 'btn-secondary';
-      break;
-    default:
-      css += 'btn-primary';
-  }
-  return css;
-}
-
-const generateClassName = (type, others) => {
-  const classType = generateType(type)
-  return (others === null ? classType : classType + " " + others)
+const generateClassName = (type, size, margins) => {
+  return `btn btn-rounded btn-${type} ${size} ${margins}`
 }
 
 const Button = props => {
   return (
     <button 
       type="button" 
-      className={generateClassName(props.type, props.others)}
+      className={generateClassName(props.type, props.size, props.margins)}
       {...props} 
     />
   )
+}
+
+Button.defaultProps = {
+  type: "",
+  size: "",
+  margins: ""
 }
 
 export default Button

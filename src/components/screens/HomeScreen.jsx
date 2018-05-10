@@ -11,10 +11,10 @@ export default class HomeScreen extends Component {
           <Container className="main">
             <div className="main-content">
               <Image className="desktop-platform" imageName="dual-monitor-desktop-platform.png" />
-              <hgroup>
+              <Container>
                   <h1>Don't let profitable moments pass you by...</h1>
                   <h2>Real-time mortgage data, advanced analytics, and reporting at your fingertips</h2>
-              </hgroup>
+              </Container>
               <div className="btn btn-rounded btn-primary lg mb-4">Get Started</div>
             </div>
           </Container>

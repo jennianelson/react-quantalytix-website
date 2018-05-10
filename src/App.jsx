@@ -6,8 +6,8 @@ import './styles/style.scss';
 class App extends Component {
   render() {
     return (
-      <HomeScreen />
-			// <AboutUsScreen />
+      // <HomeScreen />
+			<AboutUsScreen />
     );
   }
 }
