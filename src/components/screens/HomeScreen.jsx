@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Button} from '../primitives';
 import {Sidebar, Header, Container, Image} from '../ui';
 
 export default class HomeScreen extends Component {
@@ -15,7 +16,7 @@ export default class HomeScreen extends Component {
                   <h1>Don't let profitable moments pass you by...</h1>
                   <h2>Real-time mortgage data, advanced analytics, and reporting at your fingertips</h2>
               </Container>
-              <div className="btn btn-rounded btn-primary lg mb-4">Get Started</div>
+              <Button type="primary" size="lg" margins="mb-4">Get Started</Button>
             </div>
           </Container>
 				</Container>
