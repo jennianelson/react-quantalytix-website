@@ -13,18 +13,7 @@ export default class ContactUsScreen extends Component {
 					<main className="main">
             <div className="main-content">
               <div className="d-md-flex">
-                <div className="col-md-6 px-md-0">
-                  <div className="contact-form">
-                    <h1 className="text-left mb-1"><span>CONTACT US</span></h1>
-                    <h2 className="text-left mb-4 pb-3">OUTMANEUVER. OUTSMART. OUTPERFORM.</h2>
-
-                    <ContactUsForm>
-                    </ContactUsForm>
-
-                  </div>
-                  {/* <!-- contact-form --> */}
-                </div>
-
+                <ContactUsForm></ContactUsForm>
                 <div className="col-md-6">
                   <div className="contacts-right-block">
                     <span className="contacts-right-block-logo d-none d-md-block"><a href=""><Image imageName="contact-logo.svg"/></a></span>

@@ -1,7 +1,13 @@
-import PrimaryButton from './parts/PrimaryButton'
-import SecondaryButton from './parts/PrimaryButton'
+import InputGroup from './parts/InputGroup';
+import UsernameField from './parts/UsernameField';
+import EmailField from './parts/EmailField';
+import PhoneField from './parts/PhoneField';
+import CompanyField from './parts/CompanyField';
 
 export {
-  PrimaryButton,
-  SecondaryButton
+  InputGroup,
+  UsernameField,
+  EmailField,
+  PhoneField,
+  CompanyField
 }
