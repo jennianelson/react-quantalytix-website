@@ -1,21 +1,22 @@
 import React from 'react';
 
-const generateClassName = (type, size, margins) => {
-  return `btn btn-rounded btn-${type} ${size} ${margins}`
+const generateClassName = (kind, size, margins) => {
+  return `btn btn-rounded btn-${kind} ${size} ${margins}`
 }
 
 const Button = props => {
   return (
     <button 
-      type="button" 
-      className={generateClassName(props.type, props.size, props.margins)}
+      type={props.type}
+      className={generateClassName(props.kind, props.size, props.margins)}
       {...props} 
     />
   )
 }
 
 Button.defaultProps = {
-  type: "",
+  type: "button",
+  kind: "",
   size: "",
   margins: ""
 }

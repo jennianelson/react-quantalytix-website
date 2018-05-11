@@ -16,7 +16,7 @@ export default class HomeScreen extends Component {
                   <h1>Don't let profitable moments pass you by...</h1>
                   <h2>Real-time mortgage data, advanced analytics, and reporting at your fingertips</h2>
               </div>
-              <Button type="primary" size="lg" margins="mb-4">Get Started</Button>
+              <Button kind="primary" size="lg" margins="mb-4">Get Started</Button>
             </div>
           </div>
 				</div>
