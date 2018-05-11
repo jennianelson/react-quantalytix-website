@@ -13,8 +13,8 @@ export default class Header extends Component {
               <span></span>
             </MenuCollapse>
             <div className="btns-group">
-                <Button type="secondary">Signup</Button>
-                <Button type="primary">Login</Button>
+                <Button kind="secondary">Signup</Button>
+                <Button kind="primary">Login</Button>
             </div>
         </div>
       </header>
