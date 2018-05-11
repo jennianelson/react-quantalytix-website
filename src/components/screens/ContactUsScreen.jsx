@@ -32,7 +32,7 @@ export default class ContactUsScreen extends Component {
                         <div className="input-group-prepend">
                           <div className="input-group-text">
                             {/* <img src="images/svg/contact us/Email.svg" className="img-fluid" alt=""/> */}
-                            <Image imageName="Email.svg" />
+                            <Image imageName="email.svg" />
                           </div>
                         </div>
                         <input type="email" className="form-control" placeholder="Email"/>
@@ -73,7 +73,7 @@ export default class ContactUsScreen extends Component {
                     <span className="contacts-right-block-logo d-none d-md-block"><a href=""><Image imageName="contact-logo.svg"/></a></span>
                     <span className="link"><a href="tel:123456789"><strong><Image imageName="phone-contact-info.svg"/></strong>123 456 789</a></span>
                     <span className="link"><a href="mailto:Loremipsum@infor.com"><strong><Image imageName="email-contact-info.svg"/></strong>Loremipsum@infor.com</a></span>
-                    <span className="link"><strong><Image className="address-contact-info.svg"/></strong><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa magni sunt tenetur tempora a</span></span>
+                    <span className="link"><strong><Image imageName="address-contact-info.svg"/></strong><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa magni sunt tenetur tempora a</span></span>
 
                     <div className="contacts-right-block-bottom">
                       <button type="submit" className="btn btn-rounded btn-blue lg mt-5">LEARN MORE</button>
