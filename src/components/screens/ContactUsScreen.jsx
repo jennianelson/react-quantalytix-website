@@ -5,7 +5,7 @@ import {ContactUsForm, QContactsBlock} from '../widgets'
 
 export default class ContactUsScreen extends Component {
   render() {
-    return (
+    return ( 
       <div className="container-fluid about-page">
         <Sidebar></Sidebar>
 				<div className="main-container">
