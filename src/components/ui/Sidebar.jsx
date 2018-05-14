@@ -5,9 +5,8 @@ import {MenuCollapse} from '../ui'
 
 export default class Sidebar extends Component {
   render() {
-    const {className, id} = this.props
     return (
-      <aside className={className} id={id}>
+      <aside className="aside collapse" id="collapseExample">
         <MenuCollapse className="close thick" />
             <div className="aside-content">
                 <div className="text-center">
