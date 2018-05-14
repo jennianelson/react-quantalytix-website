@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Button, Image} from '../primitives';
 import {Sidebar, Header, Footer} from '../ui';
 import {ContactUsForm, QContactsBlock} from '../widgets'
 

@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
 import HomeScreen from './components/screens/HomeScreen';
 import AboutUsScreen from './components/screens/AboutUsScreen';
 import ContactUsScreen from './components/screens/ContactUsScreen';
@@ -9,10 +13,14 @@ import './styles/style.scss';
 class App extends Component {
   render() {
     return (
-      // <HomeScreen />
-      // <AboutUsScreen />
-      // <ContactUsScreen />
-      <MarketDataScreen />
+      <Router>
+        <div>
+          <Route exact path="/" component={HomeScreen} />
+          <Route exact path="/about-us" component={AboutUsScreen} />
+          <Route exact path="/contact-us" component={ContactUsScreen} />
+          <Route exact path="/market-data" component={MarketDataScreen} />
+        </div>
+      </Router>
     );
   }
 }

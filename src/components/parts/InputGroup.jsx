@@ -7,16 +7,16 @@ const InputGroup = ({purpose}) => {
   switch (purpose) {
     case 'username':
       return <UsernameField />;
-      break;
+      // break;
     case 'email':
       return <EmailField />;
-      break;
+      // break;
     case 'company':
       return <CompanyField />;
-      break;
+      // break;
     case 'phone':
       return <PhoneField />;
-      break;
+      // break;
     default:
       return <TextField />;
   }

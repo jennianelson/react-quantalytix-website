@@ -1,9 +1,8 @@
 import React from 'react';
-import {Image} from '../primitives'
 import {SocialMediaBar} from '../widgets';
 import { Copyright, GoDaddy } from '../ui';
 
-const Footer = ({}) => {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
