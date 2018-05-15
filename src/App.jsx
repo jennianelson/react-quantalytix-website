@@ -3,6 +3,11 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
+//Trying to get Resources page to render
+import { findDOMNode } from 'react-dom';
+import $ from 'jquery';
+import Slider from "react-slick";
+
 import HomeScreen from './components/sections/Home/HomeScreen';
 import AboutUsScreen from './components/sections/AboutUs/AboutUsScreen';
 import ContactUsScreen from './components/sections/ContactUs/ContactUsScreen';

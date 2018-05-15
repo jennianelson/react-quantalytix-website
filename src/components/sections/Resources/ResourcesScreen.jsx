@@ -35,7 +35,7 @@ export default class ResourcesScreen extends Component {
                             </a>
 
                             <a href="#" className="item">
-                                <Image imageName="images/slide-2.png"/>
+                                <Image imageName="slide-2.png"/>
                                 <span className="item-content">
                                     <h5>Lorem ipsum</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quis, at. Nobis maxime ut quis consequuntur dolorem, qui totam adipisci eligendi labore porro non aut nesciunt sapiente assumenda fugiat ratione.</p>

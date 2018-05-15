@@ -1,8 +1,7 @@
 @import 'base/libs';
 
-$breakpoints: $grid-breakpoints;
-
 // Bases classes are fundamental building blocks based on the site design
+// @import 'mixins/mixins';
 @import 'base/fonts';
 @import 'base/colors';
 
@@ -23,3 +22,7 @@ $breakpoints: $grid-breakpoints;
 @import 'modules/market-data';
 @import 'modules/about';
 @import 'modules/contact';
+
+//Added these--may not be necessary
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
