@@ -3,6 +3,7 @@ import {Button, Image} from '../../primitives';
 import { Sidebar, Header } from '../../ui';
 
 export default class ResourcesScreen extends Component {
+
   render () {
     return (
       <div className="container-fluid market-data-page">

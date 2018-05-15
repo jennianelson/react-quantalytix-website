@@ -3,20 +3,12 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-//Trying to get Resources page to render
-import { findDOMNode } from 'react-dom';
-import $ from 'jquery';
-import Slider from "react-slick";
 
-import HomeScreen from './components/sections/Home/HomeScreen';
-import AboutUsScreen from './components/sections/AboutUs/AboutUsScreen';
-import ContactUsScreen from './components/sections/ContactUs/ContactUsScreen';
-import MarketDataScreen from './components/sections/Products & Services/MarketDataScreen';
-import MortgageAnalyticsScreen from './components/sections/Products & Services/MortgageAnalyticsScreen';
-import ResourcesScreen from './components/sections/Resources/ResourcesScreen';
+import {HomeScreen, AboutUsScreen, ContactUsScreen, MarketDataScreen, MortgageAnalyticsScreen, ResourcesScreen} from './components/sections'
 
 import './styles/style.scss';
-// import './styles/base/_baseelements.scss';
+// import './styles/base/testingscss.scss';
+import './styles/base/_baseelements.scss';
 
 class App extends Component {
   render() {
