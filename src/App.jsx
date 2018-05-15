@@ -3,10 +3,10 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import HomeScreen from './components/screens/HomeScreen';
-import AboutUsScreen from './components/screens/AboutUsScreen';
-import ContactUsScreen from './components/screens/ContactUsScreen';
-import MarketDataScreen from './components/screens/MarketDataScreen';
+import HomeScreen from './components/sections/Home/HomeScreen';
+import AboutUsScreen from './components/sections/AboutUs/AboutUsScreen';
+import ContactUsScreen from './components/sections/ContactUs/ContactUsScreen';
+import MarketDataScreen from './components/sections/MarketData/MarketDataScreen';
 import './styles/style.scss';
 // import './styles/base/_baseelements.scss';
 
