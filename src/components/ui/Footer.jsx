@@ -2,6 +2,8 @@ import React from 'react';
 import SocialMediaBar from './SocialMediaBar';
 import { Copyright, GoDaddy } from '../ui';
 
+import '../../styles/layouts/_footer.scss';
+
 const Footer = () => {
   return (
     <footer className="footer">

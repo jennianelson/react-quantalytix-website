@@ -5,6 +5,9 @@ import PricingSection  from './PricingSection';
 import FeaturesList from './FeaturesList';
 import {Video} from '../../parts';
 
+import '../../../styles/modules/_main.scss';
+import '../../../styles/modules/_market-data.scss';
+
 const featuresArray = [
     {image: "loan-performance.svg",
     heading: "Loan Performance",

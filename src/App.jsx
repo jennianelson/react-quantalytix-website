@@ -6,10 +6,6 @@ import {
 
 import {HomeScreen, AboutUsScreen, ContactUsScreen, MarketDataScreen, MortgageAnalyticsScreen, ResourcesScreen} from './components/sections'
 
-import './styles/style.scss';
-// import './styles/base/testingscss.scss';
-import './styles/base/_baseelements.scss';
-
 class App extends Component {
   render() {
     return (

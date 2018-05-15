@@ -3,6 +3,9 @@ import {Sidebar, Header, Footer} from '../../ui';
 import ContactUsForm from './ContactUsForm';
 import QContactsBlock from './QContactsBlock';
 
+import '../../../styles/modules/_main.scss';
+import '../../../styles/modules/_contact.scss';
+
 export default class ContactUsScreen extends Component {
   render() {
     return ( 

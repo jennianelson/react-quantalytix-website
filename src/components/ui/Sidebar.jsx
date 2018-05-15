@@ -4,6 +4,8 @@ import Nav from './Nav';
 import { Image } from '../primitives';
 import {MenuCollapse} from '../ui';
 
+import '../../styles/layouts/_sidebar.scss';
+
 export default class Sidebar extends Component {
   render() {
     return (

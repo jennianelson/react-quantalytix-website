@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Button} from '../primitives'
 import {MenuCollapse} from '../ui'
 
+import '../../styles/layouts/_header.scss';
+
 export default class Header extends Component {
   render() {
     return (

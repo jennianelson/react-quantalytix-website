@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../../styles/ui_components/_buttons.scss';
+
 const generateClassName = (kind, size, margins) => {
   return `btn btn-rounded btn-${kind} ${size} ${margins}`
 }
