@@ -4,6 +4,8 @@ import EmailField from './parts/EmailField';
 import PhoneField from './parts/PhoneField';
 import CompanyField from './parts/CompanyField';
 import FeaturesList from './parts/FeaturesList';
+import MarketDataListItem from './parts/MarketDataListItem';
+import Video from './parts/Video';
 
 export {
   InputGroup,
@@ -11,5 +13,7 @@ export {
   EmailField,
   PhoneField,
   CompanyField,
-  FeaturesList
+  FeaturesList,
+  MarketDataListItem,
+  Video
 }
