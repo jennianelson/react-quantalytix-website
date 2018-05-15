@@ -1,6 +1,6 @@
 import React from 'react';
-import {Image, Button} from '../primitives';
-import { FeaturesList } from '../parts';
+import {Image, Button} from '../../primitives';
+import { FeaturesList } from '../../parts';
 
 const freeFeatures = ["2015 Data Only", "New Issuance Data", "Loan Performance Data", "All Data Fields"]
 const oneMonthFeatures = [...freeFeatures, "Single Seat License", "Light Customer Support"]

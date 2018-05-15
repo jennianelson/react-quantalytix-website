@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {Button, Image} from '../../primitives';
 import { Sidebar, Header } from '../../ui';
-import { MarketDataList, MarketDataPricing } from '../../widgets';
+import MarketDataPricing  from './MarketDataPricing';
+import MarketDataList from './MarketDataList';
 import {Video} from '../../parts';
 
 export default class MarketDataScreen extends Component {

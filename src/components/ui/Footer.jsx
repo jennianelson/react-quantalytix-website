@@ -1,5 +1,5 @@
 import React from 'react';
-import {SocialMediaBar} from '../widgets';
+import SocialMediaBar from './SocialMediaBar';
 import { Copyright, GoDaddy } from '../ui';
 
 const Footer = () => {

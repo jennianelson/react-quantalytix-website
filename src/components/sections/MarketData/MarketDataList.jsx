@@ -1,5 +1,5 @@
 import React from 'react';
-import { MarketDataListItem } from '../parts';
+import MarketDataListItem from './MarketDataListItem';
 
 const MarketDataList = () => {
   return (

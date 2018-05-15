@@ -1,6 +1,6 @@
 import React from 'react';
-import {Button} from '../primitives';
-import { PricingCard } from '../widgets';
+import {Button} from '../../primitives';
+import PricingCard from './PricingCard';
 
 const MarketDataPricing = () => {
   return (

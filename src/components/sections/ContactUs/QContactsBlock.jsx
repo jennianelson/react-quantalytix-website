@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Image} from '../primitives';
+import {Image} from '../../primitives';
 
 export default class QContactsBlock extends Component {
   render() {

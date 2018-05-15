@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Sidebar, Header, Footer} from '../../ui';
-import {ContactUsForm, QContactsBlock} from '../../widgets'
+import ContactUsForm from './ContactUsForm';
+import QContactsBlock from './QContactsBlock';
 
 export default class ContactUsScreen extends Component {
   render() {

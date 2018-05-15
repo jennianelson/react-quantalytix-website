@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Button} from '../primitives';
-import { InputGroup } from '../parts';
+import {Button} from '../../primitives';
+import { InputGroup } from '../../parts';
 
 export default class ContactUsForm extends Component {
   // constructor(props) {
