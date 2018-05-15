@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image} from '../primitives';
 
-const FeaturesList = ({list}) => {
+const PricingList = ({list}) => {
   return (
     <ul className="pricing-fetures">
       {list.map((item, index) => {
@@ -16,4 +16,4 @@ const FeaturesList = ({list}) => {
   )
 }
 
-export default FeaturesList;
+export default PricingList;

@@ -26,7 +26,7 @@ export default class Nav extends Component {
             </li>
             <li className="sidebar-nav-item">
               <NavLink 
-                to="/mortage-analytics"
+                to="/mortgage-analytics"
                 activeClassName="sidebar-nav-item active">
                 <span className="menu-icon non-selected"><i className="icon-mortgage-analytics-menu"></i></span>
                 <span className="menu-icon selected"><i className="icon-resources-menu-selected"></i></span>
@@ -34,7 +34,7 @@ export default class Nav extends Component {
             </li>
             <li className="sidebar-nav-item">
               <NavLink 
-                to="/resourses"
+                to="/resources"
                 activeClassName="sidebar-nav-item active">
                 <span className="menu-icon non-selected"><i className="icon-resources-menu"></i></span>
                 <span className="menu-icon selected"><i className="icon-resources-menu-selected"></i></span>

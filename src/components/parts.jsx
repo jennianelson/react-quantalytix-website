@@ -3,7 +3,7 @@ import UsernameField from './parts/UsernameField';
 import EmailField from './parts/EmailField';
 import PhoneField from './parts/PhoneField';
 import CompanyField from './parts/CompanyField';
-import FeaturesList from './parts/FeaturesList';
+import PricingList from './parts/PricingList';
 import Video from './parts/Video';
 
 export {
@@ -12,6 +12,6 @@ export {
   EmailField,
   PhoneField,
   CompanyField,
-  FeaturesList,
+  PricingList,
   Video
 }

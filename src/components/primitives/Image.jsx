@@ -10,12 +10,14 @@ function importAll(r) {
 
 const images = importAll(require.context('../../assets/images', false, /\.(png|jpe?g|svg)$/));
 
-const Image = props => {
+const Image = ({className, imageName}) => {
   return (
-    <div className={props.className}>
-      <img src={images[props.imageName]} alt="" className="img-fluid"/>
-    </div>
+    <img src={images[imageName]} alt="" className={className}/>
   )
+}
+
+Image.defaultProps = {
+  className: "img-fluid"
 }
 
 export default Image;
