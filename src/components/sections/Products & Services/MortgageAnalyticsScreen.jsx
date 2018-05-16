@@ -4,27 +4,28 @@ import { Sidebar, Header } from '../../ui';
 import PricingSection  from './PricingSection';
 import FeaturesList from './FeaturesList';
 import {Video} from '../../parts';
+import {mortgageAnalyticsFeatures} from './datasets'
 
-const featuresArray = [
-    {image: "loan-performance.svg",
-    heading: "Loan Performance",
-    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
-    {image:"delinquency.svg",
-    heading:"Delinquency",
-    description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
-    {image:"broker-appraiser.svg",
-    heading:"Broker & Appraiser",
-    description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
-    {image:"fraud-risk.svg",
-    heading:"Fraud & Risk",
-    description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
-    {image:"loan-worthiness.svg",
-    heading:"Loan Worthiness",
-    description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
-    {image:"lease-operations-exposure.svg",
-    heading:"Lease Operations & Exposure",
-    description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
-  ]
+// const featuresArray = [
+//     {image: "loan-performance.svg",
+//     heading: "Loan Performance",
+//     description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
+//     {image:"delinquency.svg",
+//     heading:"Delinquency",
+//     description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
+//     {image:"broker-appraiser.svg",
+//     heading:"Broker & Appraiser",
+//     description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
+//     {image:"fraud-risk.svg",
+//     heading:"Fraud & Risk",
+//     description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
+//     {image:"loan-worthiness.svg",
+//     heading:"Loan Worthiness",
+//     description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
+//     {image:"lease-operations-exposure.svg",
+//     heading:"Lease Operations & Exposure",
+//     description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
+//   ]
 
 export default class MortgageAnalyticsScreen extends Component {
   render () {
@@ -43,7 +44,7 @@ export default class MortgageAnalyticsScreen extends Component {
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lob ortis nisl</p>
                         <p>Another paragraph of text</p>
                         <p>Currently we offer the following:</p>
-                      <FeaturesList className="market-data-list" featuresArray={featuresArray}/>
+                      <FeaturesList className="market-data-list" featuresArray={mortgageAnalyticsFeatures}/>
                     </div>
 
                     <div className="col-md-6">
