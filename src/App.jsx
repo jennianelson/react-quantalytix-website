@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route
-} from 'react-router-dom';
-
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import {HomeScreen, AboutUsScreen, ContactUsScreen, MarketDataScreen, MortgageAnalyticsScreen, ResourcesScreen} from './components/sections'
+
+import './styles/style.scss';
 
 class App extends Component {
   render() {

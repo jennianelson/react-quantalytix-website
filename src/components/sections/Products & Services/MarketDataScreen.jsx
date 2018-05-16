@@ -5,9 +5,6 @@ import PricingSection  from './PricingSection';
 import FeaturesList from './FeaturesList';
 import {Video} from '../../parts';
 
-import '../../../styles/modules/_main.scss';
-import '../../../styles/modules/_market-data.scss';
-
 const featuresArray = [
   {image: "ridiculously-fast-data.svg",
   heading: "Ridiculously fast data",

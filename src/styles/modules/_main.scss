@@ -1,15 +1,13 @@
-@import '../basestyles';
-
 .home-page, .market-data-page, .about-page, .contact-page  {
     display: flex;
     padding: 0;
-    background: url("../../assets/images/home-bg1.png") 50% no-repeat;
+    background: url("../assets/images/home-bg1.png") 50% no-repeat;
     background-size: cover;
     min-height: 100vh;
     position: relative;
     &:after {
         content: "";
-        background: url("../../assets/images/home-bg2.png") 50% no-repeat;
+        background: url("../assets/images/home-bg2.png") 50% no-repeat;
         position: absolute;
         top: 0;
         left: 0;
@@ -29,7 +27,7 @@
 }
 
 .market-data-page {
-    background: #191919  url("../../assets/images/market-data-bg.jpg") 0 0 no-repeat;
+    background: #191919  url("../assets/images/market-data-bg.jpg") 0 0 no-repeat;
     background-attachment: fixed;
     background-size: 90%;
     &:after {

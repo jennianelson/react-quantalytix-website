@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 import {Button, Image} from '../../primitives';
 import {Sidebar, Header} from '../../ui';
 
-import '../../../styles/modules/_main.scss';
-import '../../../styles/modules/_about.scss';
-
 export default class AboutUsScreen extends Component {
   render() {
     return (
