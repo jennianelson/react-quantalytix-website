@@ -14,9 +14,9 @@ const NavBar = () => {
     return (
       <nav className="sidebar-menu">
         <ul className="sidebar-nav">
-          {navLinks.map(link => {
+          {navLinks.map((link, index) => {
             return (
-              <li className="sidebar-nav-item">
+              <li key={index} className="sidebar-nav-item">
                 <NavLink
                   activeClassName="sidebar-nav-item active"
                   to={link.url}
