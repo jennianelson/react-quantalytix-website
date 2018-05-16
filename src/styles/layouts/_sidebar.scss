@@ -33,7 +33,7 @@
 }
 
 .aside-content {
-    display: flex;
+    display: inline-block;
     flex-flow: column;
     height: 100%;
     position: relative;
@@ -97,6 +97,7 @@
     }
 
     &.active {
+        width: 100%;
         background: #100b23;
         border-left: 3px solid #90c2ec;
         .menu-icon {

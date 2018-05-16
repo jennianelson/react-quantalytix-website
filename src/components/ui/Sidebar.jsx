@@ -1,10 +1,23 @@
 import React, {Component} from 'react';
 import { NavLink } from 'react-router-dom';
-import Nav from './Nav';
+import NavBar from './NavBar';
 import { Image } from '../primitives';
 import {MenuCollapse} from '../ui';
 
 export default class Sidebar extends Component {
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     url: ""
+  //   }
+  // }
+
+  // handleClick = (url) => {
+  //   this.setState({
+  //     url: url
+  //   })
+  // }
+
   render() {
     return (
       <aside className="aside collapse" id="collapseExample">
@@ -13,7 +26,7 @@ export default class Sidebar extends Component {
                 <div className="text-center">
                   <NavLink to="/" className="brand"><Image imageName="qlogo-dark-psd.png"/></NavLink>
                 </div>
-                <Nav className="sidebar-menu"></Nav>
+                <NavBar/>
             </div>
       </aside>
     )

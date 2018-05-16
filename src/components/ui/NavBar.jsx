@@ -1,17 +1,47 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export default class Nav extends Component {
-  render() {
-    const {className} = this.props
+const navLinks = [
+  {title: "Home", url: "/", icon: "home"},
+  {title: "Market Data", url: "/market-data", icon: "market-data"},
+  {title: "Mortgage Analytics", url: "/mortgage-analytics", icon: "mortgage-analytics"},
+  {title: "Resources", url: "/resources", icon: "resources"},
+  {title: "About Us", url: "/about-us", icon: "about-us"},
+  {title: "Contact Us", url: "/contact-us", icon: "contact-us"}
+]
+
+const NavBar = () => {
     return (
-      <nav className={className}>
+      <nav className="sidebar-menu">
         <ul className="sidebar-nav">
-            <li className="sidebar-nav-item">
+          {navLinks.map(link => {
+            return (
+              <li className="sidebar-nav-item">
+                <NavLink
+                  activeClassName="sidebar-nav-item active"
+                  to={link.url}
+                  exact>
+                  <span className="menu-icon non-selected"><i className={`icon-${link.icon}-menu`}></i></span>
+                  <span className="menu-icon selected"><i className={`icon-${link.icon}-menu-selected`}></i></span>
+                {link.title}</NavLink>
+              </li>
+            )
+          })}
+        </ul>
+      </nav>
+    )
+  }
+
+  export default NavBar;
+
+  NavBar.defaultProps = {
+    activeLink: ""
+  }
+
+              {/* <li onClick={this.handleClick} className={this.state.active ? "sidebar-nav-item active" : "sidebar-nav-item"}>
               <NavLink 
                 to="/" 
-                exact
-                activeClassName="sidebar-nav-item active">
+                exact>
                 <span className="menu-icon non-selected"><i className="icon-home-menu"></i></span>
                 <span className="menu-icon selected"><i className="icon-home-menu-selected"></i></span>
               Home</NavLink>
@@ -55,9 +85,4 @@ export default class Nav extends Component {
                 <span className="menu-icon non-selected"><i className="icon-contact-us-menu"></i></span>
                 <span className="menu-icon selected"><i className="icon-contact-us-menu-selected"></i></span>
               Contact Us</NavLink>
-            </li>
-        </ul>
-      </nav>
-    )
-  }
-}
+            </li> */}
