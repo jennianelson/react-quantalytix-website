@@ -5,18 +5,6 @@ import { Image } from '../primitives';
 import {MenuCollapse} from '../ui';
 
 export default class Sidebar extends Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     url: ""
-  //   }
-  // }
-
-  // handleClick = (url) => {
-  //   this.setState({
-  //     url: url
-  //   })
-  // }
 
   render() {
     return (
