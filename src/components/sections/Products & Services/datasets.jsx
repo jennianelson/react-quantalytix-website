@@ -31,8 +31,35 @@ const marketDataFeatures = [
   description:"to market data including GNMA loan level data!"}
 ]
 
+const freeFeatures = [
+  "2015 Data Only", 
+  "New Issuance Data", 
+  "Loan Performance Data", 
+  "All Data Fields"
+]
+const oneMonthFeatures = [
+  ...freeFeatures, 
+  "Single Seat License", 
+  "Light Customer Support"
+]
+
+const annualFeatures = [
+  "Discounted 20%!",
+  "2013-Current Data", 
+  "Updated Monthly", 
+  "Loan Performance Data", 
+  "All Data Fields", 
+  "Custom Field Requests", 
+  "Two Seat Licenses", 
+  "Full Customer Support", 
+  "Free Academic Licenses Available"
+]
+
 
 export {
   mortgageAnalyticsFeatures,
-  marketDataFeatures
+  marketDataFeatures,
+  freeFeatures,
+  oneMonthFeatures,
+  annualFeatures
 }

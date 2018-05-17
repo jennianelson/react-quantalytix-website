@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import {Button, Image} from '../../primitives';
-// import {Sidebar, Header} from '../../ui';
 import {MainContent} from '../../Wrappers';
 import PageTemplate from '../../widgets/PageTemplate';
 
 export default class AboutUsScreen extends Component {
   render() {
     return (
-      <PageTemplate pageWrapper="about-page">
+      <PageTemplate className="about-page">
         <MainContent className="mt-md-5">
           <Image className="about-logo" imageName="about-logo.svg" />
           <hgroup className="py-4">

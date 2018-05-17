@@ -1,11 +1,9 @@
 import React from 'react';
 import {Image, Button} from '../../primitives';
-import {PricingList} from '../../parts';
+import PricingList from './PricingList';
+import {freeFeatures, oneMonthFeatures, annualFeatures} from './datasets'
 
-const freeFeatures = ["2015 Data Only", "New Issuance Data", "Loan Performance Data", "All Data Fields"]
-const oneMonthFeatures = [...freeFeatures, "Single Seat License", "Light Customer Support"]
 oneMonthFeatures.splice(0, 1, "2013 to Current Data")
-const annualFeatures = ["Discounted 20%!", "2013-Current Data", "Updated Monthly", "Loan Performance Data", "All Data Fields", "Custom Field Requests", "Two Seat Licenses", "Full Customer Support", "Free Academic Licenses Available"]
 
 const chooseList = (title) => {
   if (title === "Free") {

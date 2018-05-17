@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
-import {Footer} from '../../ui';
+import PageTemplate from '../../widgets/PageTemplate';
+import {MainContent, InternalContent} from '../../Wrappers';
 import ContactUsForm from './ContactUsForm';
 import QContactsBlock from './QContactsBlock';
-import {MainContent} from '../../Wrappers';
-import PageTemplate from '../../widgets/PageTemplate';
+import {Footer} from '../../ui';
 
 export default class ContactUsScreen extends Component {
   render() {
     return ( 
-    <PageTemplate pageWrapper="about-page">
+    <PageTemplate className="about-page">
       <MainContent>
-        <div className="d-md-flex">
+        <InternalContent className="d-md-flex">
           <ContactUsForm />
           <QContactsBlock />
-        </div>
+        </InternalContent>
         <Footer />
       </MainContent>
     </PageTemplate>

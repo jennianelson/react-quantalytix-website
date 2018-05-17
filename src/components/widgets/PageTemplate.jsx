@@ -2,9 +2,9 @@ import React from 'react';
 import {PageWrapper, MainContainer} from '../Wrappers';
 import {Sidebar, Header} from '../ui';
 
-const PageTemplate = ({pageWrapper, children}) => {
+const PageTemplate = ({className, children}) => {
   return (
-    <PageWrapper className={pageWrapper}>
+    <PageWrapper className={className}>
       <Sidebar className="aside collapse" id="collapseExample"></Sidebar>
       <MainContainer>
         <Header className="header"></Header>
