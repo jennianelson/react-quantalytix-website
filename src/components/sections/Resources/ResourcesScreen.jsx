@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Image} from '../../primitives';
+// import {Button, Image} from '../../primitives';
 import { Sidebar, Header } from '../../ui';
 
 export default class ResourcesScreen extends Component {
@@ -25,7 +25,7 @@ export default class ResourcesScreen extends Component {
                     <div className="col-md-12 text-left pr-xl-5">
                         <h3 className="text-left sm my-4">OUR BLOG</h3>
 
-                        <div className="blog-slider slick">
+                        {/* <div className="blog-slider slick">
                             <a href="#" className="item">
                                 <Image imageName="slide-1.png"/>
                                 <span className="item-content">
@@ -61,7 +61,7 @@ export default class ResourcesScreen extends Component {
                                     <span className="date">30 march 2018</span>
                                 </span>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
               </section>
@@ -71,7 +71,7 @@ export default class ResourcesScreen extends Component {
                       <div className="col-md-12 text-left pr-xl-5">
                           <h3 className="text-left sm my-4">CUSTOMER TESTIMONIALS</h3>
 
-                          <div className="testimonials-slider slick">
+                          {/* <div className="testimonials-slider slick">
                               <a href="#" className="item">
                                   <span className="avatar-photo"><Image imageName="avatar.png"/></span>
                                   <span className="item-content">
@@ -107,7 +107,7 @@ export default class ResourcesScreen extends Component {
                                       <span className="text-bottom">_Lorem ipsum_</span>
                                   </span>
                               </a>
-                          </div>
+                          </div> */}
                       </div>
                   </div>
               </section>

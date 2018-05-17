@@ -6,27 +6,6 @@ import FeaturesList from './FeaturesList';
 import {Video} from '../../parts';
 import {mortgageAnalyticsFeatures} from './datasets'
 
-// const featuresArray = [
-//     {image: "loan-performance.svg",
-//     heading: "Loan Performance",
-//     description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
-//     {image:"delinquency.svg",
-//     heading:"Delinquency",
-//     description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
-//     {image:"broker-appraiser.svg",
-//     heading:"Broker & Appraiser",
-//     description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
-//     {image:"fraud-risk.svg",
-//     heading:"Fraud & Risk",
-//     description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
-//     {image:"loan-worthiness.svg",
-//     heading:"Loan Worthiness",
-//     description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
-//     {image:"lease-operations-exposure.svg",
-//     heading:"Lease Operations & Exposure",
-//     description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam."},
-//   ]
-
 export default class MortgageAnalyticsScreen extends Component {
   render () {
     return (
