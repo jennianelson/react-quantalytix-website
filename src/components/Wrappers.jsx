@@ -1,8 +1,12 @@
 import React from 'react';
 
-const PageWrapper = ({className, children}) => (<div className={`container-fluid ${className}`}>{children}</div>)
+const PageWrapper = ({className, children}) => (
+  <div className={`container-fluid ${className}`}>{children}</div>
+)
 
-const MainContainer = ({children}) => (<div className="main-container">{children}</div>)
+const MainContainer = ({children}) => (
+  <div className="main-container">{children}</div>
+)
 
 const MainContent = ({className, children}) => {
   return (
@@ -14,8 +18,11 @@ const MainContent = ({className, children}) => {
   )
 }
 
+const InternalContent = ({className, children}) => (<div className={className}>{children}</div>)
+
 export {
   PageWrapper,
   MainContainer,
-  MainContent
+  MainContent,
+  InternalContent
 }
