@@ -1,8 +1,8 @@
 import React from 'react';
 
-const videoBG = {
-  background: require('../../assets/images/video-poster.png')
-}
+// const videoBG = {
+//   background: require('../../assets/images/video-poster.png')
+// }
 
 const Video = () => {
   return (
