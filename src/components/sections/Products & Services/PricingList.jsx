@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image} from '../primitives';
+import {Image} from '../../primitives';
 
 const PricingList = ({list}) => {
   return (
