@@ -6,7 +6,7 @@ const PricingSection = () => {
   return (
     <section className="section-pricing">
       <Row className="row mb-md-4 mt-5 mt-xl-0">
-        <Col className="col-12">
+        <Col className="col-12 pricing-title">
           <h3 className="text-left sm">Pricing</h3>
         </Col>
       </Row>

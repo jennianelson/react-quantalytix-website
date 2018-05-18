@@ -27,13 +27,23 @@
 }
 
 .market-data-page {
-    background: #191919  url("../assets/images/market-data-bg.jpg") 0 0 no-repeat;
-    background-attachment: fixed;
-    background-size: 90%;
+    background: url("../assets/images/home-bg1 copy 2.png");
+    background-size: cover;
     &:after {
-        content: normal;
+        content: "";
+        background: url("../assets/images/logo-q-bg1.png") 50% no-repeat;
     }
 }
+
+//ORIGINAL DESIGN
+// .market-data-page {
+//     background: #191919  url("../assets/images/market-data-bg.jpg") 0 0 no-repeat;
+//     background-attachment: fixed;
+//     background-size: 90%;
+//     &:after {
+//         content: normal;
+//     }
+// }
 
 .main-container {
     display: flex;
@@ -61,6 +71,6 @@
     }
 }
 
-.resourses-section, .testimonials-section {
+.resourses-section, .testimonials-section, {
     padding: 20px 40px;
 }

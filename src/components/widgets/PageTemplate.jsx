@@ -5,7 +5,7 @@ import {Sidebar, Header} from '../ui';
 const PageTemplate = ({className, children}) => {
   return (
     <PageWrapper className={className}>
-      <Sidebar className="aside collapse" id="collapseExample"></Sidebar>
+      <Sidebar></Sidebar>
       <MainContainer>
         <Header className="header"></Header>
           {children}

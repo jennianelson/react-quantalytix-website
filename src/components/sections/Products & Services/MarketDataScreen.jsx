@@ -15,7 +15,7 @@ export default class MarketDataScreen extends Component {
           <InternalContent className="container px-xl-5 pt-4">
             <Row className="row">
               <Col className="col-md-6 text-left pr-xl-5">
-                <h2 className="mb-4">MARKET DATA</h2>
+                <h3 className="mb-4">MARKET DATA</h3>
                 {/* <h4 className="text-center">Informed Decision-making, Uncompromising Accessibility</h4> */}
                   <p>We deliver data through an intuitive platform that maximizes collaboration and limits bottlenecks. Users not only choose the data they need but also benefit from enterprise-focused licensing.</p>
                   <p>Whether you're looking for a custom data solution or to replace your current expensive terminal, we are your platform. We deliver all the core functionality you need like multi-asset class coverage, real-time news, economic events, and excel download.</p>
