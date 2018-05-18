@@ -21,14 +21,14 @@ const mortgageAnalyticsFeatures = [
 
 const marketDataFeatures = [
   {image: "ridiculously-fast-data.svg",
-  heading: "Ridiculously fast data",
-  description: "made accessible through familiar tools like Excel, Qlik, and Tableau."},
+  heading: "Pay for the Data You Need",
+  description: "We don’t force our customers into a one-size-fits all data platform. Buy the data you need, not the platform that has it."},
   {image:"gorgeous.svg",
-  heading:"Gorgeous, intuitive dashboards",
-  description:"for key strategic management and key performance indicator (KPI) tracking."},
+  heading:"People-Centric Experience",
+  description:"The technology you use should fit seamlessly into your daily routine.  Our platform gives you access to the information you need with [elegant] ease and efficiency."},
   {image:"simplified-access.svg",
-  heading:"Simpliﬁed access",
-  description:"to market data including GNMA loan level data!"}
+  heading:"Access & Action",
+  description:"We equip more people with more data, allowing your organization to move faster toward your goals. We are in the age of information; your team should be too."}
 ]
 
 const freeFeatures = [
