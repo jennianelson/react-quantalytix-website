@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button} from '../primitives'
+// import {Button} from '../primitives'
 import {MenuCollapse} from '../ui'
 
 export default class Header extends Component {
@@ -12,10 +12,10 @@ export default class Header extends Component {
               <span></span>
               <span></span>
             </MenuCollapse>
-            <div className="btns-group">
+            {/* <div className="btns-group">
                 <Button kind="secondary">Signup</Button>
                 <Button kind="primary">Login</Button>
-            </div>
+            </div> */}
         </div>
       </header>
     )
