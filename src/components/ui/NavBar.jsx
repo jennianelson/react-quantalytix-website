@@ -21,9 +21,9 @@ const NavBar = () => {
                   activeClassName="sidebar-nav-item active"
                   to={link.url}
                   exact>
-                  <div className="menu-icon non-selected"><i className={`icon-${link.icon}-menu`}></i></div>
-                  <div className="menu-icon selected"><i className={`icon-${link.icon}-menu-selected`}></i></div>
-                {link.title}</NavLink>
+                  <span className="menu-icon non-selected"><i className={`icon-${link.icon}-menu`}></i></span>
+                  <span className="menu-icon selected"><i className={`icon-${link.icon}-menu-selected`}></i></span>
+                <span>{link.title}</span></NavLink>
               </li>
             )
           })}
