@@ -20,7 +20,7 @@ export default class ResourcesScreen extends Component {
                 </div>
               </div>
 
-              <section className="resourses-section">
+              <section className="resources-section">
                 <div className="row">
                     <div className="col-md-12 text-left pr-xl-5">
                         <h3 className="text-left sm my-4">OUR BLOG</h3>
