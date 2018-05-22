@@ -9,7 +9,7 @@ import {mortgageAnalyticsFeatures} from './datasets'
 export default class MortgageAnalyticsScreen extends Component {
   render () {
     return (
-      <div class="container-fluid market-data-page">
+      <div class="container-fluid market-data-page mortgage-analytics-page">
          <Sidebar />
         <div className="main-container">
           <Header />

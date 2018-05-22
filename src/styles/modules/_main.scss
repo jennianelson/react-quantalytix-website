@@ -35,6 +35,15 @@
     }
 }
 
+.mortgage-analytics-page {
+    background: url("../assets/images/main-bg-purple.png");
+    background-size: cover;
+    &:after {
+        content: "";
+        background: url("../assets/images/logo-q-bg1.png") 50% no-repeat;
+    }
+}
+
 //ORIGINAL DESIGN
 // .market-data-page {
 //     background: #191919  url("../assets/images/market-data-bg.jpg") 0 0 no-repeat;
