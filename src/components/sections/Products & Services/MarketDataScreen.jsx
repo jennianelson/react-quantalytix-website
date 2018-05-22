@@ -31,7 +31,7 @@ export default class MarketDataScreen extends Component {
                 <Button kind="primary" margins="md mt-3">Request demo</Button>
               </Col>
             </Row>
-            <PricingSection />
+            {/* <PricingSection /> */}
           </InternalContent>
         </MainContent>
       </PageTemplate>
