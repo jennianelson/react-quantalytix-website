@@ -14,7 +14,6 @@ export default class ContactUsScreen extends Component {
           <ContactUsForm />
           <QContactsBlock />
         </InternalContent>
-        <Footer />
       </MainContent>
     </PageTemplate>
     )

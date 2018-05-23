@@ -9,7 +9,7 @@ export default class MortgageAnalyticsScreen extends Component {
   render () {
     return (
       <PageTemplate className="mortgage-analytics-page">
-        <MainContent>
+        <MainContent className="mt-5">
           <h1 className="mb-4">MORTGAGE ANALYTICS</h1>
           <h2>Keeping you on course with your mission</h2>
           <InternalContent className="container px-xl-5 py-4">

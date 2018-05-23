@@ -1,6 +1,6 @@
 import React from 'react';
 import {PageWrapper, MainContainer} from '../Wrappers';
-import {Sidebar, Header} from '../ui';
+import {Sidebar, Header, Footer} from '../ui';
 
 const PageTemplate = ({className, children}) => {
   return (
@@ -9,6 +9,7 @@ const PageTemplate = ({className, children}) => {
       <MainContainer>
         <Header className="header"></Header>
           {children}
+      {className !== "home-page" ? <Footer/> : null}
       </MainContainer>
     </PageWrapper>
   )

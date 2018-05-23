@@ -11,7 +11,7 @@ export default class MarketDataScreen extends Component {
   render () {
     return (
       <PageTemplate className="market-data-page">
-        <MainContent>
+        <MainContent className="mt-5">
         <h1 className="mb-4">MARKET DATA</h1>
         <h2>Informed decision-making, uncompromising accessibility</h2>
           <InternalContent className="container px-xl-5 pt-4">
