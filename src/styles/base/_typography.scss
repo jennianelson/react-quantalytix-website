@@ -1,6 +1,5 @@
 h1 {
     color: $theme-neutral-color;
-    font-family: $roboto;
     font-size: rem(36px);
     font-weight: 700;
     margin-bottom: 5px;
@@ -14,7 +13,6 @@ h1 {
 
 h2 {
     color: $theme-neutral-color;
-    font-family: $roboto;
     font-size: rem(20px);
     font-weight: 300;
     @include media-breakpoint-up(xl) {
@@ -24,7 +22,6 @@ h2 {
 
 h3 {
     text-transform: uppercase;
-    font-family: $roboto;
     font-weight: 300;
     &.sm {
         font-size: rem(24px);
@@ -33,7 +30,6 @@ h3 {
 
 h4 {
     @include media-breakpoint-up(lg) {
-        font-family: $roboto;
         font-size: rem(18px);
         font-weight: 300;
     }
