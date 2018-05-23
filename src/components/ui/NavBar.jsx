@@ -5,7 +5,7 @@ const navLinks = [
   {title: "Home", url: "/", icon: "home"},
   {title: "Market Data", url: "/market-data", icon: "market-data"},
   {title: "Mortgage Analytics", url: "/mortgage-analytics", icon: "mortgage-analytics"},
-  {title: "Resources", url: "/resources", icon: "resources"},
+  // {title: "Resources", url: "/resources", icon: "resources"},
   {title: "About Us", url: "/about-us", icon: "about-us"},
   {title: "Contact Us", url: "/contact-us", icon: "contact-us"}
 ]

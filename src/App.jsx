@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import {HomeScreen, AboutUsScreen, ContactUsScreen, MarketDataScreen, MortgageAnalyticsScreen, ResourcesScreen} from './components/sections'
+import {HomeScreen, AboutUsScreen, ContactUsScreen, MarketDataScreen, MortgageAnalyticsScreen} from './components/sections'
 
 import './styles/style.scss';
 
@@ -14,7 +14,7 @@ class App extends Component {
           <Route exact path="/contact-us" component={ContactUsScreen} />
           <Route exact path="/market-data" component={MarketDataScreen} />
           <Route exact path="/mortgage-analytics" component={MortgageAnalyticsScreen} />
-          <Route exact path="/resources" component={ResourcesScreen} />
+          {/* <Route exact path="/resources" component={ResourcesScreen} /> */}
         </div>
       </Router>
     );
