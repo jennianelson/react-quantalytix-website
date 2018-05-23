@@ -3,13 +3,14 @@ import {PageWrapper, MainContainer} from '../Wrappers';
 import {Sidebar, Header, Footer} from '../ui';
 
 const PageTemplate = ({className, children}) => {
+  const footer = className !== "home-page" ? <Footer/> : null
   return (
     <PageWrapper className={className}>
       <Sidebar></Sidebar>
       <MainContainer>
         <Header className="header"></Header>
           {children}
-      {className !== "home-page" ? <Footer/> : null}
+      {footer}
       </MainContainer>
     </PageWrapper>
   )

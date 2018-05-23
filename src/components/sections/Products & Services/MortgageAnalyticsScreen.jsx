@@ -3,7 +3,7 @@ import {Button, Image, Row, Col} from '../../primitives';
 import FeaturesList from './FeaturesList';
 import {mortgageAnalyticsFeatures} from './datasets'
 import PageTemplate from '../../widgets/PageTemplate';
-import { MainContent, InternalContent, MainContainer } from '../../Wrappers';
+import { MainContent, InternalContent} from '../../Wrappers';
 
 export default class MortgageAnalyticsScreen extends Component {
   render () {

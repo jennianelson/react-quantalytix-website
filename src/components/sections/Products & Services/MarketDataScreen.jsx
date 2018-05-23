@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Image, Row, Col} from '../../primitives';
-import PricingSection  from './PricingSection';
 import FeaturesList from './FeaturesList';
-import {Video} from '../../parts';
 import {marketDataFeatures} from './datasets';
 import PageTemplate from '../../widgets/PageTemplate';
 import { MainContent, InternalContent } from '../../Wrappers';
