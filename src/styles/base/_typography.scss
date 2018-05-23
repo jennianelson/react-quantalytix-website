@@ -1,7 +1,7 @@
 h1 {
     color: $theme-neutral-color;
     font-size: rem(36px);
-    font-weight: 700;
+    font-weight: 300;
     margin-bottom: 5px;
     @include media-breakpoint-down(lg) {
         margin-bottom: rem(20px);
@@ -9,12 +9,15 @@ h1 {
     @include media-breakpoint-up(xl) {
         font-size: rem(50px);
     }
+    &.heavy {
+        font-weight: 600;
+    }
 }
 
 h2 {
     color: $theme-neutral-color;
     font-size: rem(20px);
-    font-weight: 300;
+    font-weight: 400;
     @include media-breakpoint-up(xl) {
         font-size: rem(28px);
     }
@@ -30,7 +33,7 @@ h3 {
 
 h4 {
     @include media-breakpoint-up(lg) {
-        font-size: rem(18px);
-        font-weight: 300;
+        font-size: rem(20px);
+        font-weight: 400;
     }
 }

@@ -10,7 +10,7 @@ export default class HomeScreen extends Component {
         <MainContent>
           <Image className="desktop-platform" imageName="dual-monitor-desktop-platform.png" />
           <hgroup>
-            <h1>Don't let profitable moments pass you by...</h1>
+            <h1 className="heavy">Don't let profitable moments pass you by...</h1>
             <h2>Real-time mortgage data, advanced analytics, and reporting at your fingertips</h2>
           </hgroup>
           <Button kind="primary" size="lg" margins="mb-4">Get Started</Button>

@@ -39,6 +39,10 @@ body {
     }
 }
 
+main {
+	padding: 0 rem(20px);
+}
+
 p,a,h1,h2,h3,h4,h5,h6,div,br,li,td,article{
 	user-select: text;
 }

@@ -2,8 +2,26 @@
     background: #191919  url("../assets/images/about-us-image-bg.png") 0 0 no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+    // text-shadow: 2px 2px black;
     &:after {
         content: normal;
+    }
+}
+
+.office-background {
+    background: #191919  url("../assets/images/Q-office.png") 0 0 no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    &:after {
+        content: "";
+        background: rgba(22, 24, 25, .4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        z-index: 0;
     }
 }
 
