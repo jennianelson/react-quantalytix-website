@@ -2,8 +2,10 @@ import React, {Component} from 'react';
 import {Button, Image} from '../../primitives';
 import PageTemplate from '../../widgets/PageTemplate';
 import { MainContent } from '../../Wrappers';
+import { NavLink } from 'react-router-dom';
 
 export default class HomeScreen extends Component {
+
   render() {
     return (
       <PageTemplate className="home-page">
@@ -13,7 +15,7 @@ export default class HomeScreen extends Component {
             <h1 className="heavy">Don't let profitable moments pass you by...</h1>
             <h2>Real-time mortgage data, advanced analytics, and reporting at your fingertips</h2>
           </hgroup>
-          <Button kind="primary" size="lg" margins="mb-4">Get Started</Button>
+          <NavLink to="/contact-us"><Button kind="primary" size="lg" margins="mb-4">Get Started</Button></NavLink>
         </MainContent>
     	</PageTemplate>
     )

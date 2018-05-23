@@ -11,9 +11,9 @@ export default class QContactsBlock extends Component {
           <span className="link"><a href="mailto:Loremipsum@infor.com"><strong><Image imageName="email-contact-info.svg"/></strong>Loremipsum@infor.com</a></span>
           <span className="link"><strong><Image imageName="address-contact-info.svg"/></strong><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa magni sunt tenetur tempora a</span></span>
 
-          <div className="contacts-right-block-bottom">
+          {/* <div className="contacts-right-block-bottom">
             <button type="submit" className="btn btn-rounded btn-blue lg mt-5">LEARN MORE</button>
-          </div>
+          </div> */}
         </div> 
       </div>
     )

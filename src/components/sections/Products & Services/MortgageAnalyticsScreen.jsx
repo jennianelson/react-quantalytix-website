@@ -4,6 +4,7 @@ import FeaturesList from './FeaturesList';
 import {mortgageAnalyticsFeatures} from './datasets'
 import PageTemplate from '../../widgets/PageTemplate';
 import { MainContent, InternalContent} from '../../Wrappers';
+import { NavLink } from 'react-router-dom';
 
 export default class MortgageAnalyticsScreen extends Component {
   render () {
@@ -26,7 +27,7 @@ export default class MortgageAnalyticsScreen extends Component {
             <Row>
               <Col className="col-md-6 pt-5 pr-xl-5">
                 <Image imageName="mortgage-video-image-bg.png"/>
-                <Button kind="primary" margins="md mt-3">Request demo</Button>
+                <NavLink to="/contact-us"><Button kind="primary" margins="md mt-3">Request demo</Button></NavLink>
               </Col>
               <Col className="col-md-6 pt-xl-3">
                 <FeaturesList className="market-data-list" featuresArray={mortgageAnalyticsFeatures}/>

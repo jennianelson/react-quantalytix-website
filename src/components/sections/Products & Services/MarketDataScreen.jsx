@@ -4,6 +4,7 @@ import FeaturesList from './FeaturesList';
 import {marketDataFeatures} from './datasets';
 import PageTemplate from '../../widgets/PageTemplate';
 import { MainContent, InternalContent } from '../../Wrappers';
+import { NavLink } from 'react-router-dom';
 
 export default class MarketDataScreen extends Component {
   render () {
@@ -26,7 +27,7 @@ export default class MarketDataScreen extends Component {
               </Col>
               <Col className="col-md-6 mt-4">
                 <Image imageName="market-data-device-platform.png"/>
-                <Button kind="primary" margins="md mt-3">Request demo</Button>
+                <NavLink to="/contact-us"><Button kind="primary" margins="md mt-3">Request demo</Button></NavLink>
               </Col>
             </Row>
           </InternalContent>

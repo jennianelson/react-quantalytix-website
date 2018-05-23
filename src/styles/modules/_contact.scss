@@ -101,14 +101,14 @@
             font-family: 'quantalytix';
             color: rgba(255,255,255,0.63);
             display: inline-block;
-            padding-left: rem(15px);
+            // padding-left: rem(30px);
             font-size: rem(16px);
             position: absolute;
             margin-left: 64%;
             top: 50%;
             transform: translateY(-50%);
             z-index: 2;
-            @include media-breakpoint-up(xl) {
+            @include media-breakpoint-up(lg) {
                 margin-left: 67%;
             }
         }
@@ -156,11 +156,11 @@
     text-align: left;
     position: relative;
     @include media-breakpoint-up(md) {
-        padding: rem(115px) 0 0;
+        padding: rem(120px) 2rem 0;
     }
     @include media-breakpoint-up(xl) {
-        padding: rem(120px) 0 0;
-        left: -55px;
+        padding: rem(125px) 2rem 0;
+        // left: -55px;
     }
 
     &-logo {
