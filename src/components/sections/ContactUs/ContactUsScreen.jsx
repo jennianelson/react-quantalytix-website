@@ -10,7 +10,13 @@ export default class ContactUsScreen extends Component {
     <PageTemplate className="about-page">
       <MainContent>
         <InternalContent className="d-md-flex">
-          <ContactUsForm />
+          <div className="col-md-6 px-md-0">
+            <div className="contact-form">
+              <h1 className="text-left mb-1 pr-5"><span>CONTACT US</span></h1>
+              <h2 className="text-left mb-4 pb-3">OUTMANEUVER. OUTSMART. OUTPERFORM.</h2>
+              <ContactUsForm />
+            </div>
+          </div>
           <QContactsBlock />
         </InternalContent>
       </MainContent>

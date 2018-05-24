@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextField, Image } from '../primitives';
 
-const InputGroup = ({type, placeholder, icon}) => {
+const InputGroup = ({handleChange, name, value, type, placeholder, icon}) => {
   return (
     <div className="input-group mb-4">
       <div className="input-group-prepend">
@@ -9,7 +9,7 @@ const InputGroup = ({type, placeholder, icon}) => {
           <Image imageName={icon}/>
         </div>
       </div>
-      <TextField type={type} placeholder={placeholder}/>
+      <TextField handleChange={handleChange} name={name} value={value} type={type} placeholder={placeholder}/>
     </div>
   )
 }
