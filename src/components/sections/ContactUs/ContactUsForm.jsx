@@ -13,19 +13,15 @@ export default class ContactUsForm extends Component {
         <div className="contact-form">
           <h1 className="text-left mb-1 pr-5"><span>CONTACT US</span></h1>
           <h2 className="text-left mb-4 pb-3">OUTMANEUVER. OUTSMART. OUTPERFORM.</h2>
-          <form action="#">
+          <form action="http://localhost:5000/api/contact" method="post">
             <InputGroup placeholder="First Name" icon="user.svg" />
             <InputGroup placeholder="Last Name" icon="user.svg" />
             <InputGroup type="email" placeholder="Email" icon="email.svg" />
             <InputGroup placeholder="Phone" icon="phone.svg" />
             <InputGroup placeholder="Company" icon="company.svg" />
-            {/* <div className="input-group mb-4"> */}
-              <Button type="submit" kind="primary" size="lg" margins="w-100 mt-5">CONTACT US!</Button>
-            {/* </div> */}
+            <Button type="submit" kind="primary" size="lg" margins="w-100 mt-5">CONTACT US!</Button>
           </form>
-    
         </div>
-        {/* <!-- contact-form --> */}
       </div>
     )
   }
