@@ -17,10 +17,10 @@ export default class AboutUsScreen extends Component {
                 <p>Meet the founders of Quantalytix, Chris and Will. As former bankers, we saw how important it is to have access to market data in order to appropriately manage risk. We also saw many instances where current data solutions limited accessibility due to high costs and restrictive licensing. In an industry becoming more complex with each passing day, we saw the need to put more data and information in the hands of more people. This is why we started Quantalytix.</p>
                 <Row className="row my-4">
                   <Col className="col-md-6 px-4 py-4">
-                    <Image imageName="Bryant_headshot.png"/>
+                    <Image imageName="CA_headshot_round.png"/>
                   </Col>
                   <Col className="col-md-6 px-4 py-4">
-                    <Image imageName="chris_aliotta.png"/>
+                    <Image imageName="WB_headshot_round.png"/>
                   </Col>
                 </Row>
                 <p>In an age of information, we believe having the right tools to access data in a timely and efficient way are essential to productivity. Our market data platform allows users to accomplish this and reach new levels of productivity. By offering the core features and functionality, our platform allows users to work at their own pace and not get slowed down by bulky platforms with esoteric navigation features.</p>
