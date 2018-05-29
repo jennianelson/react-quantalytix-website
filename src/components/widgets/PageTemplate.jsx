@@ -9,8 +9,8 @@ const PageTemplate = ({className, children}) => {
       <Sidebar></Sidebar>
       <MainContainer>
         <Header className="header"></Header>
-          {children}
-      {footer}
+        {children}
+        {footer}
       </MainContainer>
     </PageWrapper>
   )
