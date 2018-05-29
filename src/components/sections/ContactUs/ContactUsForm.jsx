@@ -28,7 +28,15 @@ export default class ContactUsForm extends Component {
     alert(`Thanks, ${this.state.firstName}!`);
     //
     event.preventDefault();
-    this.sendData(this.state)
+    const data = this.state
+    // debugger
+    fetch('http://localhost:54344/api/contact', {
+      body: JSON.stringify(data),
+      headers: {'content-type': 'application/json'},
+      method: 'POST'
+      }).then(res => res.json())
+      .then(json => console.log(json));
+    
     this.setState({
       firstName: '',
       lastName: '',
@@ -36,13 +44,6 @@ export default class ContactUsForm extends Component {
       phoneNumber: '',
       company: ''
     });
-  }
-
-  sendData(state) {
-    const xhr = new XMLHttpRequest;
-    xhr.open("POST", "http://localhost:5000/api/contact", true);
-    xhr.setRequestHeader("Access-Control-Allow-Origin", "http://localhost:3000/contact-us");
-    xhr.send(state);
   }
 
   render() {
