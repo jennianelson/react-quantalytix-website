@@ -13,8 +13,8 @@ export default class ContactUsScreen extends Component {
         <InternalContent className="d-md-flex">
           <Col className="col-md-6 px-md-0">
             <div className="contact-form">
-              <h1 className="text-left mb-1 pr-5"><span>CONTACT US</span></h1>
-              <h2 className="text-left mb-4 pb-3">OUTMANEUVER. OUTSMART. OUTPERFORM.</h2>
+              <h1 className="mb-1"><span className="center-inner-div">CONTACT US</span></h1>
+              <h2 className="mb-4">OUTMANEUVER. OUTSMART. OUTPERFORM.</h2>
               <ContactUsForm />
             </div>
           </Col>

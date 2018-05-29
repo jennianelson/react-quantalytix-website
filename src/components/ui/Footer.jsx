@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialMediaBar from './SocialMediaBar';
-import { Copyright, GoDaddy } from '../ui';
+import { Copyright } from '../ui';
 
 const Footer = () => {
   return (
