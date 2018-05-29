@@ -27,7 +27,7 @@ export default class MarketDataScreen extends Component {
               </Col>
               <Col className="col-md-6 mt-4">
                 <Image imageName="market-data-device-platform.png"/>
-                <NavLink to="/contact-us"><Button kind="primary" margins="md mt-3">Request demo</Button></NavLink>
+                <NavLink to="/contact-us"><Button kind="primary" margins="md mt-3">Contact Us</Button></NavLink>
               </Col>
             </Row>
           </InternalContent>
