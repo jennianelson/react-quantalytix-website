@@ -5,6 +5,7 @@ import {HomeScreen, AboutUsScreen, ContactUsScreen, MarketDataScreen, MortgageAn
 import './styles/style.scss';
 
 class App extends Component {
+  
   render() {
     return (
       <Router>

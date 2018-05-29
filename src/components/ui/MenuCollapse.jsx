@@ -1,8 +1,10 @@
 import React from 'react';
 
-const MenuCollapse = (props) => {
+const MenuCollapse = ({className, children}) => {
+
   return (
-    <span className={props.className} data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" {...props}>
+    <span className={className} data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+     {children}
     </span>
   )
 }

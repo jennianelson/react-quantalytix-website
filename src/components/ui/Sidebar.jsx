@@ -5,8 +5,7 @@ import { Image } from '../primitives';
 import {MenuCollapse} from '../ui';
 
 export default class Sidebar extends Component {
-
-  render() {
+   render() {
     return (
       <aside className="aside collapse" id="collapseExample">
         <MenuCollapse className="close thick" />
