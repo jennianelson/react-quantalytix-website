@@ -30,7 +30,7 @@ export default class ContactUsForm extends Component {
     event.preventDefault();
     const data = this.state
     // debugger
-    fetch('http://localhost:54344/api/contact', {
+    fetch('http://localhost:5000/api/contact', {
       body: JSON.stringify(data),
       headers: {'content-type': 'application/json'},
       method: 'POST'
