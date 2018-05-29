@@ -9,7 +9,7 @@ export default class ContactUsScreen extends Component {
   render() {
     return ( 
     <PageTemplate className="about-page">
-      <MainContent>
+      <MainContent className="mt-5 ml-5">
         <InternalContent className="d-md-flex">
           <Col className="col-md-6 px-md-0">
             <div className="contact-form">

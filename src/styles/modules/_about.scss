@@ -8,13 +8,19 @@
     }
 }
 
+.about-us-text {
+    font-size: rem(18px);
+    text-shadow: 2px 2px black;
+    text-align: left;
+}
+
 .office-background {
     background: #191919  url("../assets/images/Q-office.png") 0 0 no-repeat;
     background-attachment: fixed;
     background-size: 100%;
     &:after {
         content: "";
-        background: rgba(22, 24, 25, .4);
+        background: rgba(22, 24, 25, .7);
         position: absolute;
         top: 0;
         left: 0;
