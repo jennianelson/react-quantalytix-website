@@ -11,7 +11,7 @@ export default class Sidebar extends Component {
       <aside className="aside collapse" id="collapseExample">
         <MenuCollapse className="close thick" />
             <div className="aside-content">
-                <div className="text-center">
+                <div className="text-left">
                   <NavLink to="/" className="brand"><Image imageName="qlogo-dark-psd.png"/></NavLink>
                 </div>
                 <NavBar/>
