@@ -156,11 +156,13 @@
 .contacts-right-block {
     text-align: left;
     position: relative;
+    padding-bottom: 5rem;
+    margin-left: 30%;
     @include media-breakpoint-up(md) {
-        padding: rem(120px) 2rem 0;
+        padding-bottom: rem(120px) 2rem 0;
     }
     @include media-breakpoint-up(xl) {
-        padding: rem(125px) 2rem 0;
+        padding-bottom: rem(125px) 2rem 0;
         // left: -55px;
     }
 
