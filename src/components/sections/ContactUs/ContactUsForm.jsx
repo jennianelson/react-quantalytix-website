@@ -29,7 +29,7 @@ export default class ContactUsForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
     const data = this.state.contactInfo
-    fetch('http://localhost:5000/api/contact', {
+    fetch('/api/contact', {
       body: JSON.stringify(data),
       headers: {'content-type': 'application/json'},
       method: 'POST'
@@ -47,7 +47,6 @@ export default class ContactUsForm extends Component {
   }
 
   closeAlert(event) {
-    // debugger
     if (event !== undefined) {this.setState({
       ...this.state, submitted: false
     })} 
