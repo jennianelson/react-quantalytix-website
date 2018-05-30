@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Button} from '../../primitives';
-import { InputGroup } from '../../parts';
+import { InputGroup, Alert } from '../../parts';
 
 export default class ContactUsForm extends Component {
   constructor(props) {
@@ -24,12 +24,8 @@ export default class ContactUsForm extends Component {
   }
 
   handleSubmit(event) {
-    //remove or style this later
-    alert(`Thanks, ${this.state.firstName}!`);
-    //
     event.preventDefault();
     const data = this.state
-    // debugger
     fetch('http://localhost:5000/api/contact', {
       body: JSON.stringify(data),
       headers: {'content-type': 'application/json'},
@@ -48,6 +44,8 @@ export default class ContactUsForm extends Component {
 
   render() {
     return (
+      <div>
+      
       <form onSubmit={(event) => this.handleSubmit(event)}>
         <InputGroup handleChange={this.handleChange} name="firstName" value={this.state.firstName} placeholder="First Name" icon="user.svg" />
         <InputGroup handleChange={this.handleChange} name="lastName" value={this.state.lastName} placeholder="Last Name" icon="user.svg" />
@@ -56,6 +54,7 @@ export default class ContactUsForm extends Component {
         <InputGroup handleChange={this.handleChange} name="company" value={this.state.company} placeholder="Company" icon="company.svg" />
         <Button type="submit" kind="primary" size="lg" margins="w-100 mt-5">CONTACT US!</Button>
       </form>
+      </div>
     )
   }
 }
