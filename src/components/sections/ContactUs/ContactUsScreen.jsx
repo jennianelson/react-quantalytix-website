@@ -15,7 +15,6 @@ export default class ContactUsScreen extends Component {
               <hgroup className="py-4">
                 <h1>Contact Us</h1>
               </hgroup>
-     
         <QContactsBlock/>
       </Col>
   
