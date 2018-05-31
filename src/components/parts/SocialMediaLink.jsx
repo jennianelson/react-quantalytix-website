@@ -17,7 +17,7 @@ const SocialMediaLink = ({company}) => {
       iconName="icon-fb"
       break;
     default:
-      url = "https://www.instagram.com/quantalytix/"
+      url = "https://www.linkedin.com/company/quantalytix/"
       iconName="icon-ln";
   }
 
