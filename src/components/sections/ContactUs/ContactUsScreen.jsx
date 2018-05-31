@@ -14,8 +14,8 @@ export default class ContactUsScreen extends Component {
         <hgroup className="py-4">
           <h1>Contact Us</h1>
         </hgroup>
-        </MainContent>
-        <Col className="col-md-12 pb-5">
+        
+        <Col className="col-md-12 text-left pb-5">
         <QContactsBlock/>
         </Col>
         {/* <InternalContent className="d-md-flex"> */}
@@ -27,6 +27,7 @@ export default class ContactUsScreen extends Component {
             </div>
           </Col> */}
         {/* </InternalContent> */}
+        </MainContent>
     </PageTemplate>
     )
   }
