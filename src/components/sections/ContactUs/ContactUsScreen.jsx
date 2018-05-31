@@ -1,23 +1,23 @@
 import React, {Component} from 'react';
 import PageTemplate from '../../widgets/PageTemplate';
-import {MainContent, InternalContent} from '../../Wrappers';
+import {MainContent} from '../../Wrappers';
 import {Col, Image} from '../../primitives';
-import ContactUsForm from './ContactUsForm';
+// import ContactUsForm from './ContactUsForm';
 import QContactsBlock from './QContactsBlock';
 
 export default class ContactUsScreen extends Component {
   render() {
     return ( 
     <PageTemplate className="about-page">
-      <MainContent className="mt-5 ml-5">
-      <Col className="col-md-9">
-              <Image className="about-logo" imageName="about-logo.svg" />
-              <hgroup className="py-4">
-                <h1>Contact Us</h1>
-              </hgroup>
+      <MainContent>
+        <Image className="about-logo" imageName="about-logo.svg" />
+        <hgroup className="py-4">
+          <h1>Contact Us</h1>
+        </hgroup>
+        </MainContent>
+        <Col className="col-md-12 pb-5">
         <QContactsBlock/>
-      </Col>
-  
+        </Col>
         {/* <InternalContent className="d-md-flex"> */}
           {/* <Col className="col-md-6 px-md-0">
             <div className="contact-form">
@@ -26,9 +26,7 @@ export default class ContactUsScreen extends Component {
               <ContactUsForm />
             </div>
           </Col> */}
-
         {/* </InternalContent> */}
-      </MainContent>
     </PageTemplate>
     )
   }
