@@ -19,13 +19,13 @@ export default class Header extends Component {
     return (
       <header className="header">
         <div className="d-flex align-items-center justify-content-between justify-content-lg-end">
-            {/* <MenuCollapse className="menu-toggle">
+            <MenuCollapse className="menu-toggle">
               <div>
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
-            </MenuCollapse> */}
+            </MenuCollapse>
             {/* <div className="btns-group">
                 <Button kind="secondary">Signup</Button>
                 <Button kind="primary">Login</Button>
