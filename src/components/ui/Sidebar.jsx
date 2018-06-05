@@ -8,7 +8,7 @@ export default class Sidebar extends Component {
    render() {
     return (
       <aside className="aside collapse" id="collapseExample">
-        <MenuCollapse className="close thick" />
+        <MenuCollapse className="close thick"></MenuCollapse>
             <div className="aside-content">
                 <div className="text-left">
                   <NavLink to="/" className="brand"><Image imageName="qlogo-dark-psd.png"/></NavLink>

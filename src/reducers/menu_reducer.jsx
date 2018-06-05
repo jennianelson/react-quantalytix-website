@@ -1,6 +1,8 @@
-// export default function menuReducer(state=[], action) {
-//   switch (action.type) {
-//     case '':
-//       return
-//   }
-// }
+export default function menuReducer(state={collapsed: false}, action) {
+  switch (action.type) {
+    case 'COLLAPSE_MENU':
+      return {...state, collapsed: true}
+    default:
+      return state;
+  }
+}
