@@ -11,7 +11,7 @@ export default class HomeScreen extends Component {
       <PageTemplate className="home-page">
         <MainContent>
           <Image className="desktop-platform" imageName="dual-monitor-desktop-platform.png" />
-          <hgroup>
+            <hgroup>
             <h1 className="heavy">An Agile Platform for Market Data &amp; Analytics</h1>
             <h2>Real time financial market data and reporting at your fingertips</h2>
           </hgroup>
