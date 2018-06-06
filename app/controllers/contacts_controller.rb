@@ -1,8 +1,8 @@
 class ContactsController < ApplicationController
-
   # POST /contacts
   def create
-    binding.pry
+    # raise params.inspect
+    render json: params
   end
 
   # DELETE /contacts/:id
