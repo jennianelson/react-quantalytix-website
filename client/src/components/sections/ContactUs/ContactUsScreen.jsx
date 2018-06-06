@@ -10,7 +10,6 @@ export default class ContactUsScreen extends Component {
     return ( 
     <PageTemplate className="about-page">
       <MainContent>
-        
         <InternalContent className="d-md-flex my-5">
           <Col className="col-md-6 px-md-5">
             <div className="contact-form">
@@ -21,9 +20,9 @@ export default class ContactUsScreen extends Component {
           </Col>
           <Col className="text-left col-md-6 pt-5">
             <div className="Aligner">
-            <div className="Aligner-item">
+              <div className="Aligner-item">
               <Image className="about-logo" imageName="about-logo.svg" />
-            </div>
+              </div>
             </div>
             <QContactsBlock/>
           </Col>

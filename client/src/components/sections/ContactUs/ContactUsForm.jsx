@@ -62,7 +62,6 @@ export default class ContactUsForm extends Component {
         <InputGroup type="email" handleChange={this.handleChange} name="email" value={this.state.contactInfo.email} placeholder="Email" icon="email.svg" />
         <InputGroup handleChange={this.handleChange} name="phoneNumber" value={this.state.contactInfo.phoneNumber} placeholder="Phone Number" icon="phone.svg" />
         <InputGroup handleChange={this.handleChange} name="company" value={this.state.contactInfo.company} placeholder="Company" icon="company.svg" />
-       
         <Button type="submit" kind="primary" size="lg" margins="w-100 mt-5">CONTACT US!</Button>
       </form>
       </div>
