@@ -9,7 +9,6 @@ export default class ContactUsForm extends Component {
       contactInfo: { firstName: '',
       lastName: '',
       email: '',
-      phoneNumber: '',
       company: '' },
       submitted: false
     };
@@ -29,7 +28,7 @@ export default class ContactUsForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
     const data = this.state.contactInfo
-    fetch('/api/contact', {
+    fetch('/contacts', {
       body: JSON.stringify(data),
       headers: {'content-type': 'application/json'},
       method: 'POST'
@@ -40,7 +39,6 @@ export default class ContactUsForm extends Component {
       contactInfo: { firstName: '',
       lastName: '',
       email: '',
-      phoneNumber: '',
       company: '' },
       submitted: true
     });
@@ -60,7 +58,7 @@ export default class ContactUsForm extends Component {
         <InputGroup handleChange={this.handleChange} name="firstName" value={this.state.contactInfo.firstName} placeholder="First Name" icon="user.svg" />
         <InputGroup handleChange={this.handleChange} name="lastName" value={this.state.contactInfo.lastName} placeholder="Last Name" icon="user.svg" />
         <InputGroup type="email" handleChange={this.handleChange} name="email" value={this.state.contactInfo.email} placeholder="Email" icon="email.svg" />
-        <InputGroup handleChange={this.handleChange} name="phoneNumber" value={this.state.contactInfo.phoneNumber} placeholder="Phone Number" icon="phone.svg" />
+        {/* <InputGroup handleChange={this.handleChange} name="phoneNumber" value={this.state.contactInfo.phoneNumber} placeholder="Phone Number" icon="phone.svg" /> */}
         <InputGroup handleChange={this.handleChange} name="company" value={this.state.contactInfo.company} placeholder="Company" icon="company.svg" />
         <Button type="submit" kind="primary" size="lg" margins="w-100 mt-5">CONTACT US!</Button>
       </form>
