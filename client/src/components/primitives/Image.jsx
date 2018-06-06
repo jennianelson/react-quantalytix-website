@@ -1,7 +1,6 @@
 import React from 'react';
 
 function importAll(r) {
-  debugger
   let images = {};
   r.keys().forEach((item, index) => { 
     images[item.replace('./', '')] = r(item); 
