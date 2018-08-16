@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  resources :contacts, only: [:create, :destroy]
+  namespace :api do
+    resources :contacts
+  end
 end
