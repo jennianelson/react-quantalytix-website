@@ -1,4 +1,4 @@
-class API::ContactsController < ApplicationController
+class Api::ContactsController < ApplicationController
 
   # GET /api/contacts
   def index
@@ -8,12 +8,10 @@ class API::ContactsController < ApplicationController
 
   # POST /api/contacts
   def create
-    binding.pry
-    # raise params.inspect
-    if !Contact.find(params[:id])
-      @contact = Contact.create(contact_params)
-    else
+    if params[:id]
       @contact = Contact.find(params[:id])
+    else
+      @contact = Contact.create(contact_params)
     end
     render json: @contact, status: 200
   end
