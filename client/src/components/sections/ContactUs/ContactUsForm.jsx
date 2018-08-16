@@ -7,8 +7,8 @@ export default class ContactUsForm extends Component {
     super(props)
     this.state = {
       contact: {
-        firstName: '',
-        lastName: '',
+        firstname: '',
+        lastname: '',
         email: '',
         company: '' 
       },
@@ -18,7 +18,6 @@ export default class ContactUsForm extends Component {
   }
 
   handleChange = (event) => {
-    // debugger
     const target = event.target;
     const value = target.value;
     const name = target.name;
@@ -30,14 +29,21 @@ export default class ContactUsForm extends Component {
     });
   }
 
-  async createContact(contact) {
-    let response = await fetch('/api/contacts', {
+  async createContact() {
+    let {firstname, lastname, company, email} = this.state.contact
+    let response = await fetch('http://localhost:3001/api/contacts', {
       method: "POST",
       headers: {
         "Content-type": "application/json"
       },
-      credentials: 'include',
-      body: JSON.stringify(contact),
+      body: JSON.stringify({
+        contact: {
+          first_name: firstname,
+          last_name: lastname,
+          company: company,
+          email: email
+        }
+      }),
     })
     try {
       let contact = await response.json()
@@ -48,20 +54,18 @@ export default class ContactUsForm extends Component {
     } 
   }
 
-  handleSubmit(event) {
+  async handleSubmit(event) {
     event.preventDefault();
-    const contact = this.state.contact
-    let result = this.createContact(contact)
-
+    let result = await this.createContact()
+    //reset state
     this.setState({
       contact: { 
-        firstName: '',
-        lastName: '',
+        firstname: '',
+        lastname: '',
         email: '',
         company: '' 
       },
       submitted: true,
-      contact: result,
       error: result.error ? result.error : false
     });
   }
@@ -73,13 +77,13 @@ export default class ContactUsForm extends Component {
   }
 
   render() {
-    const {firstName, lastName, company, email} = this.state.contact
+    const {firstname, lastname, company, email} = this.state.contact
     return (
       <div>
          {this.state.submitted ? <Alert handleClick={(event) => this.closeAlert(event)} type="success">Thanks! You'll be hearing from us soon.</Alert> : null}
       <form onSubmit={(event) => this.handleSubmit(event)}>
-        <InputGroup handleChange={this.handleChange} name="firstName" value={firstName} placeholder="First Name" icon="user.svg" />
-        <InputGroup handleChange={this.handleChange} name="lastName" value={lastName} placeholder="Last Name" icon="user.svg" />
+        <InputGroup handleChange={this.handleChange} name="firstname" value={firstname} placeholder="First Name" icon="user.svg" />
+        <InputGroup handleChange={this.handleChange} name="lastname" value={lastname} placeholder="Last Name" icon="user.svg" />
         <InputGroup type="email" handleChange={this.handleChange} name="email" value={email} placeholder="Email" icon="email.svg" />
         {/* <InputGroup handleChange={this.handleChange} name="phoneNumber" value={phoneNumber} placeholder="Phone Number" icon="phone.svg" /> */}
         <InputGroup handleChange={this.handleChange} name="company" value={company} placeholder="Company" icon="company.svg" />
