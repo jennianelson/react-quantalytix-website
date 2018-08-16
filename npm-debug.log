@@ -7,7 +7,7 @@
 4 verbose stack Error: ENOENT: no such file or directory, open '/Users/JenniferANelson/Development/code/REACT/package.json'
 4 verbose stack     at Error (native)
 5 verbose cwd /Users/JenniferANelson/Development/code/REACT/FINAL-PROJECT/react-quantalytix-website
-6 error Darwin 17.5.0
+6 error Darwin 17.7.0
 7 error argv "/Users/JenniferANelson/.nvm/versions/node/v6.11.2/bin/node" "/Users/JenniferANelson/.nvm/versions/node/v6.11.2/bin/npm" "start"
 8 error node v6.11.2
 9 error npm  v3.10.10
